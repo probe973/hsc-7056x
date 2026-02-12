@@ -74,11 +74,16 @@ Below are some confidence intervals for the mean where:
 Sample mean = 70, sample standard deviation = 5, sample size = 50.
 
 80% Confidence Interval (69.1 to 70.9)
+
 90% Confidence Interval (68.8 to 71.2)
+
 95% Confidence Interval (68.6 to 71.4)
+
 99% Confidence Interval (68.2 to 71.8)
 
-Each of these confidence intervals can be written as $\text{mean} \pm \text{margin of error}$.  So, for example, the 80% confidence interval can be written as:
+Each of these confidence intervals can be written as $\text{mean} \pm \text{margin of error}$.  
+
+So, for example, the 80% confidence interval can be written as:
 
 $$ 70 \pm 0.9$$
 
@@ -134,7 +139,7 @@ Sample size = 2000; 95% Confidence Interval (69.8 to 70.2)
     question_text="What do you notice between the relationship of sample size and margin of error for the 95% confidence intervals?"
     options="wrong1::There is no relationship between the confidence level and the margin of error||correct::As the sample size increases, the margin of error decreases||wrong2::As the sample increases, the margin of error increases"
     correct_answer="correct"
-    solution_text="Sample size 50, margin of error is 1.4, sample size of 10, margin of error us 3.1, sample size of 2000, margin of error is 0.2"
+    solution_text="Sample size 50, margin of error is 1.4, sample size of 10, margin of error is 3.1, sample size of 2000, margin of error is 0.2"
 %}
 
 <div class="instructions" markdown="1">
