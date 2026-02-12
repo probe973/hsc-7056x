@@ -1,0 +1,551 @@
+---
+layout: default
+title: Glossary
+---
+
+    <div class="container">
+        <h1>Statistics Glossary</h1>
+
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#descriptive-statistics">Descriptive Statistics</a></li>
+                <li><a href="#statistical-charts">Statistical Charts</a></li>
+                <li><a href="#types-of-data">Types of Data</a></li>
+                <li><a href="#inferential-tests">Inferential Tests</a></li>
+                <li><a href="#key-terms-inferential-tests">Key Terms for Inferential Tests</a></li>
+                <li><a href="#checking-assumptions-follow-up">Checking Assumptions and Performing Follow-Up Tests</a></li>
+            </ul>
+        </div>
+
+        <h2 id="descriptive-statistics">Descriptive Statistics</h2>
+
+        <h3>Measures of Average</h3>
+        <div class="glossary-item">
+            <div class="term">Mean</div>
+            <div class="definition">The mean is the average of a dataset. It is calculated by summing all the values and dividing by the number of values.
+                $$ \bar{x} = \frac{\sum x}{n} $$
+            </div>
+        </div>
+
+        <div class="glossary-item">
+            <div class="term">Median</div>
+            <div class="definition">The median is the middle value in a dataset when the values are arranged in order. If there is an even number of observations, the median is the average of the two middle numbers.</div>
+        </div>
+
+        <div class="glossary-item">
+            <div class="term">Mode</div>
+            <div class="definition">The mode is the value that appears most frequently in a dataset. A dataset can have one mode, multiple modes, or no mode.</div>
+        </div>
+
+        <h4>Example Calculations for Measures of Average</h4>
+        <div class="example-line">Example Data: 12, 15, 15, 18, 20, 22, 25</div>
+        <br>
+        <h3>Mean:</h3>
+        <div class="example-line">Sum = 12 + 15 + 15 + 18 + 20 + 22 + 25 = 127</div>
+        <div class="example-line">Count = 7</div>
+        <div class="example-line">Mean = 127 / 7 &#8776; 18.14</div>
+        <br>
+        <h3>Median:</h3>
+        <div class="example-line">Steps to find the Median:</div>
+        <div class="example-line">1. Order the data from smallest to largest: 12, 15, 15, 18, 20, 22, 25</div>
+        <div class="example-line">2. Since there are 7 data points (an odd number), the median is the middle value.</div>
+        <div class="example-line">   Position of Median = (n + 1) / 2 = (7 + 1) / 2 = 4th position.</div>
+        <div class="example-line">3. The value at the 4th position is 18.</div>
+        <div class="example-line">Median = 18</div>
+        <br>
+        <h3>Mode:</h3>
+        <div class="example-line">Example Data: 12, 15, 15, 18, 20, 22, 25</div>
+        <div class="example-line">The value 15 appears most frequently (twice).</div>
+        <div class="example-line">Mode = 15</div>
+
+
+        <h3>Measures of Dispersion</h3>
+        <div class="glossary-item">
+            <div class="term">Range</div>
+            <div class="definition">The range is the difference between the highest and lowest values in a dataset.
+                $$ \text{Range} = X_{\text{max}} - X_{\text{min}} $$
+            </div>
+        </div>
+
+        <div class="glossary-item">
+            <div class="term">Inter-Quartile Range (IQR)</div>
+            <div class="definition">The IQR is the range of the middle 50% of the data. It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1).
+                $$ \text{IQR} = Q3 - Q1 $$
+            </div>
+        </div>
+
+        <div class="glossary-item">
+            <div class="term">Variance</div>
+            <div class="definition">Variance measures how far a set of numbers is spread out from their average value. It is the average of the squared differences from the Mean.
+                $$ s^2 = \frac{\sum(x-\bar{x})^2}{n-1} $$
+            </div>
+        </div>
+
+        <div class="glossary-item">
+            <div class="term">Standard Deviation</div>
+            <div class="definition">Standard deviation is a measure of the amount of variation or dispersion of a set of values. It is the square root of the variance.
+                $$ s = \sqrt{\frac{\sum(x-\bar{x})^2}{n-1}} $$
+            </div>
+        </div>
+
+        <h4>Example Calculations for Measures of Dispersion</h4>
+        <div class="example-line">Example Data: 12, 15, 15, 18, 20, 22, 25</div>
+        <div class="example-line">Mean = 18.14</div>
+        <br>
+        <h3>Range:</h3>
+        <div class="example-line">Highest value = 25</div>
+        <div class="example-line">Lowest value = 12</div>
+        <div class="example-line">Range = 25 - 12 = 13</div>
+        <br>
+        <h3>Inter-Quartile Range (IQR):</h3>
+        <div class="example-line">Steps to find Q1 and Q3:</div>
+        <div class="example-line">1. Order the data: 12, 15, 15, 18, 20, 22, 25</div>
+        <div class="example-line">2. Find the median (Q2) first: The median is 18.</div>
+        <div class="example-line">3. Q1 is the median of the lower half of the data (excluding the overall median if n is odd):</div>
+        <div class="example-line">   Lower half: 12, 15, 15</div>
+        <div class="example-line">   Q1 = 15</div>
+        <div class="example-line">4. Q3 is the median of the upper half of the data (excluding the overall median if n is odd):</div>
+        <div class="example-line">   Upper half: 20, 22, 25</div>
+        <div class="example-line">   Q3 = 22</div>
+        <div class="example-line">IQR = Q3 - Q1 = 22 - 15 = 7</div>
+        <br>
+        <h3>Variance:</h3>
+        <div class="example-line">Steps:</div>
+        <div class="example-line">1. Find the difference from the mean for each data point and square it:</div>
+        <div class="example-line">(12 - 18.14)<sup>2</sup> = (-6.14)<sup>2</sup> &#8776; 37.70</div>
+        <div class="example-line">(15 - 18.14)<sup>2</sup> = (-3.14)<sup>2</sup> &#8776; 9.86</div>
+        <div class="example-line">(15 - 18.14)<sup>2</sup> = (-3.14)<sup>2</sup> &#8776; 9.86</div>
+        <div class="example-line">(18 - 18.14)<sup>2</sup> = (-0.14)<sup>2</sup> &#8776; 0.02</div>
+        <div class="example-line">(20 - 18.14)<sup>2</sup> = (1.86)<sup>2</sup> &#8776; 3.46</div>
+        <div class="example-line">(22 - 18.14)<sup>2</sup> = (3.86)<sup>2</sup> &#8776; 14.90</div>
+        <div class="example-line">(25 - 18.14)<sup>2</sup> = (6.86)<sup>2</sup> &#8776; 47.06</div>
+        <div class="example-line">2. Sum these squared differences:</div>
+        <div class="example-line">37.70 + 9.86 + 9.86 + 0.02 + 3.46 + 14.90 + 47.06 = 122.86</div>
+        <div class="example-line">3. Divide by (Count - 1) for sample variance:</div>
+        <div class="example-line">Variance = 122.86 / (7 - 1) = 122.86 / 6 &#8776; 20.48</div>
+        <br>
+        <h3>Standard Deviation:</h3>
+        <div class="example-line">Variance = 20.48 (from previous calculation)</div>
+        <div class="example-line">Standard Deviation = &#8730;20.48 &#8776; 4.525</div>
+
+        <h2 id="statistical-charts">Statistical Charts</h2>
+        <div class="glossary-item">
+            <div class="term">Box Plot</div>
+            <div class="definition">A box plot (or box-and-whisker plot) is a standardised way of displaying the distribution of data based on a five-number summary:
+                <ul>
+                    <li>Minimum: The smallest value in the dataset.</li>
+                    <li>First Quartile (Q1): The 25th percentile, marking the end of the first quarter of the data.</li>
+                    <li>Median (Q2): The middle value of the dataset, also the 50th percentile.</li>
+                    <li>Third Quartile (Q3): The 75th percentile, marking the end of the third quarter of the data.</li>
+                    <li>Maximum: The largest value in the dataset.</li>
+                </ul>
+                It is particularly useful for:
+                <ul>
+                    <li>Visualising the spread, skewness, and potential outliers of a dataset.</li>
+                    <li>Comparing distributions between different groups or categories at a glance.</li>
+                </ul>
+                <img src="images/glossary/box_plot.png" alt="Vertical box plot, with labels top to bottom of max, Q3 (75%), Median (50%), Q1(25%), and Min." class="chart-image" width="800" height="489">
+            </div>
+        </div>
+        <div class="glossary-item">
+            <div class="term">Mean Plot</div>
+            <div class="definition">A mean plot displays the mean (average) of a variable for different categories or groups. It typically includes error bars, which provide a visual representation of the variability or uncertainty around each mean.
+                <ul>
+                    <li>These error bars commonly represent the Standard Error of the Mean (SEM), indicating how much the sample mean is likely to vary from the true population mean. A smaller SEM suggests a more precise estimate of the population mean.</li>
+                    <li>They can also represent the Standard Deviation (SD), showing the typical amount of variation or dispersion of individual data points around the mean.</li>
+                    <li>Alternatively, error bars can represent a Confidence Interval (e.g., 95% CI), which provides a range within which the true population mean is likely to fall with a certain level of confidence.</li>
+                </ul>
+                Mean plots are useful for:
+                <ul>
+                    <li>Visualising averages across different groups.</li>
+                    <li>Assessing the statistical significance of differences between group means; if the error bars (especially confidence intervals) of two groups do not overlap, it often suggests a statistically significant difference.</li>
+                </ul>
+                <img src="images/glossary/means_plot.png" alt="Means plot with 95% confidence intervals. There are two plots, on the left for group A on the right for group B. The mean for group B is higher than group A, the error bars do not overlap." class="chart-image" width="800" height="489">
+            </div>
+        </div>
+        <div class="glossary-item">
+            <div class="term">Histogram</div>
+            <div class="definition">A histogram is a graphical representation of the distribution of numerical data. It uses bars to show the frequency of data points within specified intervals (bins). The height of each bar indicates the frequency or count of observations falling into that range.
+                Histograms are useful for understanding:
+                <ul>
+                    <li>The shape of a dataset (e.g., normal, skewed, bimodal).</li>
+                    <li>The centre and spread of the data.</li>
+                    <li>The presence of outliers or unusual patterns.</li>
+                </ul>
+                Skewness in Histograms:
+                <ul>
+                    <li>Normal Distribution: A perfectly symmetrical, bell-shaped distribution where the mean, median, and mode are approximately equal and located at the centre.</li>
+                    <li>Skewness: Describes the asymmetry of the distribution.
+                        <ul>
+                            <li>Positive Skew (Right-skewed): The tail of the distribution extends to the right, meaning there are more extreme high values. The bulk of the data is on the left, and the mean is typically greater than the median.</li>
+                            <li>Negative Skew (Left-skewed): The tail of the distribution extends to the left, meaning there are more extreme low values. The bulk of the data is on the right, and the mean is typically less than the median.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="histogram-row">
+                <div class="histogram-item">
+                    <img src="images/glossary/hist_norm.png" alt="Histogram showing a normally distributed variable" class="chart-image" width="320" height="196">
+                    <p class="image-label">Normal Distribution</p>
+                </div>
+                <div class="histogram-item">
+                    <img src="images/glossary/hist_pos_skew.png" alt="Histogram showing a tail to the right, a positive skew" class="chart-image" width="320" height="196">
+                    <p class="image-label">Positive Skew</p>
+                </div>
+                <div class="histogram-item">
+                    <img src="images/glossary/hist_neg_skew.png" alt="Histogram showing a tail to the left, a negative skew" class="chart-image" width="320" height="196">
+                    <p class="image-label">Negative Skew</p>
+                </div>
+            </div>
+        </div>
+        <div class="glossary-item">
+            <div class="term">Scatter Plot</div>
+            <div class="definition">A scatter plot (or scatter diagram) displays the relationship between two numerical variables. Each point on the plot represents an individual observation, with its position determined by its values on the two variables (one on the X-axis, one on the Y-axis).
+                Scatter plots are highly useful for:
+                <ul>
+                    <li>Identifying patterns and trends (e.g., linear, non-linear).</li>
+                    <li>Visualising the direction and strength of correlations (positive, negative, or no correlation).</li>
+                    <li>Detecting outliers that deviate from the general pattern.</li>
+                </ul>
+                <img src="images/glossary/scatter.png" alt="Scatter diagram of variable x against variable y. There is a moderate positive correlation shown, with points scattered from bottom left to top right." class="chart-image" width="800" height="489">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 id="types-of-data">Types of Data</h2>
+        <p>Understanding the different types of data is fundamental in statistics, as it dictates which statistical analyses and visualizations are appropriate. Data can be broadly categorized into qualitative (categorical) and quantitative (numerical) types, with further subdivisions based on their measurement properties.</p>
+        <dl>
+            <dt><strong>Nominal Data</strong></dt>
+            <dd>Categorical data where categories have no inherent order or ranking. They are simply labels used to classify observations. Examples include gender (Male, Female, Non-binary), marital status (Single, Married, Divorced), or preferred study method (Flashcards, Summarizing, Practice Tests).</dd>
+
+            <dt><strong>Ordinal Data</strong></dt>
+            <dd>Categorical data where categories have a meaningful order or ranking, but the intervals between categories are not necessarily equal or meaningful. Examples include Likert scales (e.g., Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree), educational levels (High School, Bachelor's, Master's, PhD), or satisfaction ratings (Low, Medium, High).</dd>
+
+            <dt><strong>Interval Data</strong></dt>
+            <dd>Numerical data where the order and the differences between values are meaningful, but there is no true or absolute zero point. This means that a value of zero does not indicate the complete absence of the quantity. Examples include temperature in Celsius or Fahrenheit (0°C does not mean no temperature), or IQ scores.</dd>
+
+            <dt><strong>Ratio Data</strong></dt>
+            <dd>Numerical data where the order, differences, and ratios between values are all meaningful, and there is a true or absolute zero point. A value of zero indicates the complete absence of the quantity. Examples include height, weight, age, income, number of hours studied, or exam scores. Because of the true zero, ratio comparisons are valid (e.g., 20 hours is twice as long as 10 hours).</dd>
+        </dl>
+
+        <hr>
+
+        <h2 id="inferential-tests">Inferential Tests</h2>
+        <p>Inferential statistics allows us to make inferences or predictions about a larger population based on data collected from a smaller sample of that population. Unlike descriptive statistics, which merely describe the characteristics of a sample, inferential tests help us determine if observed patterns in our sample are likely to exist in the broader population, and if relationships between variables are statistically significant.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Research Question/Goal</th>
+                    <th>Dependent Variable Type</th>
+                    <th>Independent Variable(s) Type</th>
+                    <th>Parametric Test (When to Use)</th>
+                    <th>Non-Parametric Test (When to Use)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Comparing Group Averages (Independent Samples) -->
+                <tr>
+                    <td colspan="5" style="background-color:#f2f2f2; font-weight:bold; text-align:center;">Comparing Group Averages (Independent Samples)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the average (mean) of a variable between two separate, unrelated groups?</td>
+                    <td>Interval/Ratio</td>
+                    <td>Categorical (2 independent groups)</td>
+                    <td>Independent Samples t-test (Use if your interval/ratio data is roughly normally distributed in each group and their variances are similar. This test is robust with large sample sizes even if normality is slightly violated.)</td>
+                    <td>Mann-Whitney U Test (Use if your interval/ratio data is not normally distributed (especially with small samples), or if group variances are very different.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the distribution (or median) of a variable between two separate, unrelated groups?</td>
+                    <td>Ordinal</td>
+                    <td>Categorical (2 independent groups)</td>
+                    <td>N/A (Parametric tests are not suitable for ordinal data.)</td>
+                    <td>Mann-Whitney U Test (Use when comparing two independent groups on an ordinal dependent variable.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the average (mean) of a variable across three or more separate, unrelated groups?</td>
+                    <td>Interval/Ratio</td>
+                    <td>Categorical (>2 independent groups)</td>
+                    <td>One-Way Analysis of Variance (ANOVA) (Use if your interval/ratio data is roughly normally distributed in each group and their variances are similar. Robust with large sample sizes.)</td>
+                    <td>Kruskal-Wallis H Test (Use if your interval/ratio data is not normally distributed (especially with small samples), or if the spread of scores is very different between groups.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the distribution (or median) of a variable across three or more separate, unrelated groups?</td>
+                    <td>Ordinal</td>
+                    <td>Categorical (>2 independent groups)</td>
+                    <td>N/A (Parametric tests are not suitable for ordinal data.)</td>
+                    <td>Kruskal-Wallis H Test (Use when comparing three or more independent groups on an ordinal dependent variable.)</td>
+                </tr>
+                <!-- Comparing Group Averages (Related/Paired Samples - Within-Subjects) -->
+                <tr>
+                    <td colspan="5" style="background-color:#f2f2f2; font-weight:bold; text-align:center;">Comparing Group Averages (Related/Paired Samples - Within-Subjects)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the average (mean) of a variable between two related measurements (e.g., pre-test vs. post-test from the same individuals)?</td>
+                    <td>Interval/Ratio (measured twice)</td>
+                    <td>N/A (time/condition is within-subjects)</td>
+                    <td>Paired Samples t-test (Use if the differences between your paired interval/ratio observations are roughly normally distributed. Robust with large sample sizes.)</td>
+                    <td>Wilcoxon Signed-Rank Test (Use if your dependent variable is ordinal, or if the differences in your interval/ratio data are not normally distributed (especially with small samples).)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the distribution (or median) of a variable between two related measurements (e.g., pre-test vs. post-test from the same individuals)?</td>
+                    <td>Ordinal (measured twice)</td>
+                    <td>N/A (time/condition is within-subjects)</td>
+                    <td>N/A (Parametric tests are not suitable for ordinal data.)</td>
+                    <td>Wilcoxon Signed-Rank Test (Use when comparing two related measurements on an ordinal dependent variable.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the average (mean) of a variable across three or more related measurements (e.g., multiple time points from the same individuals)?</td>
+                    <td>Interval/Ratio (measured >2 times)</td>
+                    <td>N/A (time/condition is within-subjects)</td>
+                    <td>Repeated Measures ANOVA (Use if your interval/ratio data is roughly normally distributed and the assumption of sphericity is met (or a correction is applied).)</td>
+                    <td>Friedman Test (Use if your interval/ratio data is not normally distributed for repeated measures, or if sphericity is severely violated.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a significant difference in the distribution (or median) of a variable across three or more related measurements (e.g., multiple time points from the same individuals)?</td>
+                    <td>Ordinal (measured >2 times)</td>
+                    <td>N/A (time/condition is within-subjects)</td>
+                    <td>N/A (Parametric tests are not suitable for ordinal data.)</td>
+                    <td>Friedman Test (Use when comparing three or more related measurements on an ordinal dependent variable.)</td>
+                </tr>
+                <!-- Examining Associations/Relationships -->
+                <tr>
+                    <td colspan="5" style="background-color:#f2f2f2; font-weight:bold; text-align:center;">Examining Associations/Relationships</td>
+                </tr>
+                <tr>
+                    <td>Is there an association or relationship between two categorical variables?</td>
+                    <td>Categorical</td>
+                    <td>Categorical</td>
+                    <td>N/A (This is inherently a non-parametric question for categorical data.)</td>
+                    <td>Chi-Square Test of Independence (Use for examining associations between two categorical variables. Requires independent observations and sufficient expected cell counts.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a linear relationship (as one variable increases, does the other tend to increase or decrease consistently?) between two variables?</td>
+                    <td>Interval/Ratio</td>
+                    <td>Interval/Ratio</td>
+                    <td>Pearson Correlation Coefficient (Use if there's a linear relationship, and both interval/ratio variables are roughly normally distributed with no extreme outliers.)</td>
+                    <td>Spearman's Rank Correlation (Use if your interval/ratio data is not normally distributed, or if the relationship is monotonic but not linear.)</td>
+                </tr>
+                <tr>
+                    <td>Is there a monotonic relationship (as one variable increases, the other tends to increase or decrease, but not necessarily linearly?) between two variables?</td>
+                    <td>Ordinal</td>
+                    <td>Ordinal</td>
+                    <td>N/A (This is inherently a non-parametric question for ordinal data.)</td>
+                    <td>Spearman's Rank Correlation (Use for examining monotonic relationships between two ordinal variables.)</td>
+                </tr>
+                <!-- Prediction/Regression -->
+                <tr>
+                    <td colspan="5" style="background-color:#f2f2f2; font-weight:bold; text-align:center;">Prediction/Regression</td>
+                </tr>
+                <tr>
+                    <td>Can one or more independent variables predict a continuous (interval/ratio) outcome variable?</td>
+                    <td>Interval/Ratio</td>
+                    <td>Interval/Ratio and/or Categorical</td>
+                    <td>Linear Regression (Use when predicting a continuous outcome. Assumes a linear relationship, independent observations, and that residuals are normally distributed and have constant variance (homoscedasticity). Predictors should not be too highly correlated with each other (low multicollinearity).)</td>
+                    <td>N/A (Regression typically relies on parametric assumptions for accurate inference, though more advanced robust methods exist.)</td>
+                </tr>
+                <tr>
+                    <td>Can one or more independent variables predict the probability of a binary categorical outcome (e.g., Yes/No, Pass/Fail)?</td>
+                    <td>Binary Categorical</td>
+                    <td>Interval/Ratio and/or Categorical</td>
+                    <td>Binary Logistic Regression (Use when predicting a binary outcome. Assumes independent observations, low multicollinearity, and a linear relationship between continuous predictors and the log-odds of the outcome.)</td>
+                    <td>N/A (Logistic Regression is a specific form of generalized linear model with its own set of assumptions.)</td>
+                </tr>
+                <!-- Complex Designs -->
+                <tr>
+                    <td colspan="5" style="background-color:#f2f2f2; font-weight:bold; text-align:center;">Complex Designs (Multiple Independent Variables)</td>
+                </tr>
+                <tr>
+                    <td>Do two categorical independent variables, and their combined effect (interaction), significantly affect the average of an interval/ratio dependent variable?</td>
+                    <td>Interval/Ratio</td>
+                    <td>Two Categorical</td>
+                    <td>Two-Way ANOVA (Use when you have two categorical independent variables and an interval/ratio dependent variable. Assumes independent observations, interval/ratio data is approximately normally distributed, and variances are similar across all groups.)</td>
+                    <td>N/A (Non-parametric equivalents for complex ANOVAs are more advanced and typically beyond the scope of introductory statistics.)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2 id="key-terms-inferential-tests">Key Terms for Inferential Tests</h2>
+        <dl>
+            <dt><strong>Parametric Tests</strong></dt>
+            <dd>Statistical tests that make specific assumptions about the parameters of the population distribution from which the sample data are drawn. These often include assumptions about the shape of the distribution (e.g., normality) and the equality of variances. Parametric tests are generally more powerful (better at detecting a true effect) when their assumptions are met.</dd>
+
+            <dt><strong>Non-Parametric Tests</strong></dt>
+            <dd>Statistical tests that do not rely on specific assumptions about the parameters or shape of the population distribution. They are often used when data is ordinal, when the sample size is small and normality cannot be assumed, or when the data is severely skewed or has outliers that violate parametric assumptions. While generally less powerful than parametric tests, they are more robust to violations of assumptions.</dd>
+
+            <dt><strong>Normality (Approximate Normality)</strong></dt>
+            <dd>Refers to whether the distribution of your data (or the residuals in regression, or the differences in paired tests) resembles a bell-shaped curve (normal distribution). Many parametric tests assume that the data they analyze are drawn from a normally distributed population. For larger sample sizes, the Central Limit Theorem often allows these tests to be robust even if the data are not perfectly normal.</dd>
+
+            <dt><strong>Homogeneity of Variances</strong></dt>
+            <dd>This assumption means that the variability (spread) of the dependent variable is roughly equal across all groups or levels of the independent variable. For example, in an Independent Samples t-test, it means the spread of scores in Group A is similar to the spread of scores in Group B.</dd>
+
+            <dt><strong>Sphericity</strong></dt>
+            <dd>A specific assumption for Repeated Measures ANOVA. It refers to the condition where the variances of the differences between all possible pairs of within-subjects conditions (e.g., Time 1 vs. Time 2, Time 1 vs. Time 3, Time 2 vs. Time 3) are equal. Violation of sphericity can lead to an increased risk of Type I error (false positive). Statistical software can test for sphericity and apply corrections if it's violated.</dd>
+
+            <dt><strong>Independent Observations</strong></dt>
+            <dd>This assumption means that the data points in your sample are unrelated to each other. The measurement for one participant should not influence, nor be influenced by, the measurement for any other participant. This is typical for between-subjects designs where different people are in different groups.</dd>
+
+            <dt><strong>Dependent (Paired/Related) Observations</strong></dt>
+            <dd>This refers to data where observations are linked or related. This often occurs when the same participants are measured multiple times (e.g., before and after an intervention), or when participants are matched into pairs (e.g., twins, or closely related individuals). The measurements within each pair or across time points are not independent.</dd>
+
+            <dt><strong>Linear Relationship</strong></dt>
+            <dd>For tests like Pearson Correlation and Linear Regression, this assumption means that the relationship between two variables can be best described by a straight line. If you plot the data, the points should generally follow a linear pattern.</dd>
+
+            <dt><strong>Monotonic Relationship</strong></dt>
+            <dd>A relationship where as one variable increases, the other variable either consistently increases or consistently decreases, but not necessarily at a constant rate (i.e., not necessarily a straight line). This is a less strict assumption than a linear relationship and is relevant for non-parametric correlations like Spearman's.</dd>
+
+            <dt><strong>Residuals</strong></dt>
+            <dd>In regression analysis, residuals are the differences between the observed values of the dependent variable and the values predicted by the regression model. They represent the "error" in the model's prediction for each observation.</dd>
+
+            <dt><strong>Homoscedasticity (Constant Variance of Residuals)</strong></dt>
+            <dd>An assumption in linear regression that the variance of the residuals (the errors in prediction) is constant across all levels of the independent variable(s). Visually, this means the spread of residuals should look roughly even across the range of predicted values.</dd>
+
+            <dt><strong>Multicollinearity</strong></dt>
+            <dd>Occurs in regression analysis when two or more independent variables are highly correlated with each other. High multicollinearity can make it difficult to determine the individual effect of each independent variable on the dependent variable, and can lead to unstable regression coefficients.</dd>
+        </dl>
+
+        <hr>
+
+        <h2 id="checking-assumptions-follow-up">Checking Assumptions and Performing Follow-Up Tests for Common Inferential Tests</h2>
+        <p>Before conducting an inferential statistical test, it's crucial to check if your data meets the test's underlying assumptions. Violating these assumptions can lead to inaccurate results and conclusions. After some tests, if a significant result is found, you may need to perform 'follow-up' or 'post-hoc' tests to pinpoint exactly where the differences lie. Remember to refer to the specific software guides (jamovi, R, SPSS, Stata) for detailed instructions on how to perform these checks and tests.</p>
+
+        <h3>Independent Samples t-test</h3>
+        <dl>
+            <dt><strong>Assumptions to Check:</strong></dt>
+            <dd>
+                <ul>
+                    <li><strong>Independence of Observations:</strong> Ensure that the participants in one group are completely unrelated to those in the other group (e.g., different people in each group). This is a design assumption.</li>
+                    <li><strong>Normality:</strong> The dependent (outcome) variable should be approximately normally distributed within each of the two independent groups.
+                        <ul>
+                            <li><strong>How to Check:</strong> You can visually inspect histograms and Q-Q plots for each group. For smaller sample sizes (e.g., less than 50 per group), statistical tests like the Shapiro-Wilk test can be used (a non-significant p-value, typically p > .05, suggests normality).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Homogeneity of Variances:</strong> The spread of scores (variances) for the dependent variable should be roughly equal in both groups.
+                        <ul>
+                            <li><strong>How to Check:</strong> Use Levene's Test (a non-significant p-value, typically p > .05, suggests equal variances). If Levene's Test is significant, it means variances are unequal, and you should use the Welch's t-test result (which corrects for unequal variances) instead of the standard Independent Samples t-test.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Follow-Up Tests:</strong></dt>
+            <dd>Not needed. The Independent Samples t-test directly compares only two groups, so no further tests are required to pinpoint differences.</dd>
+        </dl>
+
+        <h3>Paired Samples t-test</h3>
+        <dl>
+            <dt><strong>Assumptions to Check:</strong></dt>
+            <dd>
+                <ul>
+                    <li><strong>Independence of Observations (between pairs):</strong> While the two measurements within each participant are dependent, each pair of observations (e.g., Participant 1's pre-test and post-test scores) should be independent of other pairs (e.g., Participant 2's scores). This is a design assumption.</li>
+                    <li><strong>Normality of Differences:</strong> The distribution of the <strong>differences</strong> between the two paired measurements should be approximately normally distributed.
+                        <ul>
+                            <li><strong>How to Check:</strong> Calculate the difference score for each participant (e.g., Post-test - Pre-test). Then, visually inspect a histogram and Q-Q plot of these difference scores. For smaller sample sizes, the Shapiro-Wilk test on the difference scores can be used.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Follow-Up Tests:</strong></dt>
+            <dd>Not needed. The Paired Samples t-test directly compares only two related measurements, so no further tests are required.</dd>
+        </dl>
+
+        <h3>One-Way ANOVA</h3>
+        <dl>
+            <dt><strong>Assumptions to Check:</strong></dt>
+            <dd>
+                <ul>
+                    <li><strong>Independence of Observations:</strong> Ensure participants in one group are completely unrelated to those in other groups. This is a design assumption.</li>
+                    <li><strong>Normality:</strong> The dependent (outcome) variable should be approximately normally distributed within each of the groups.
+                        <ul>
+                            <li><strong>How to Check:</strong> Visually inspect histograms and Q-Q plots for each group separately. For smaller sample sizes per group, the Shapiro-Wilk test can be run for each group.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Homogeneity of Variances:</strong> The spread of scores (variances) for the dependent variable should be roughly equal across all groups.
+                        <ul>
+                            <li><strong>How to Check:</strong> Use Levene's Test (a non-significant p-value, typically p > .05, suggests equal variances). If Levene's Test is significant, you may consider using Welch's ANOVA (if available in your software) or a non-parametric alternative like the Kruskal-Wallis H Test.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Follow-Up Tests:</strong></dt>
+            <dd>
+                Needed if the One-Way ANOVA is statistically significant (p < .05). These tests, often called post-hoc tests, help you determine <strong>which specific group means</strong> are different from each other, as the ANOVA only tells you that <strong>at least one</strong> difference exists among the multiple groups.
+                <ul>
+                    <li><strong>Common Post-Hoc Tests:</strong>
+                        <ul>
+                            <li><strong>Tukey's HSD (Honestly Significant Difference):</strong> A popular choice for comparing all possible pairs of means when homogeneity of variances is met.</li>
+                            <li><strong>Games-Howell Post-Hoc Test:</strong> Recommended when the assumption of homogeneity of variances is violated (i.e., Levene's test is significant).</li>
+                            <li><strong>Bonferroni Correction:</strong> A more conservative adjustment that can be applied to individual pairwise comparisons, reducing the chance of Type I error but potentially increasing Type II error.</li>
+                        </ul>
+                    </li>
+                    <li><strong>When Not Needed:</strong> If the overall One-Way ANOVA is not statistically significant, or if you only have two groups (in which case you would use an Independent Samples t-test instead).</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <h3>Repeated Measures ANOVA</h3>
+        <dl>
+            <dt><strong>Assumptions to Check:</strong></dt>
+            <dd>
+                <ul>
+                    <li><strong>Independence of Observations (between subjects):</strong> Each participant's data should be independent of other participants' data. This is a design assumption.</li>
+                    <li><strong>Normality:</strong> The dependent variable should be approximately normally distributed for each repeated measure (e.g., at each time point or condition).
+                        <ul>
+                            <li><strong>How to Check:</strong> Visually inspect histograms and Q-Q plots for the dependent variable at each measurement point.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sphericity:</strong> This is a specific and important assumption for Repeated Measures ANOVA. It means that the variances of the differences between all possible pairs of within-subjects conditions (e.g., Time 1 vs. Time 2, Time 1 vs. Time 3, Time 2 vs. Time 3) are equal.
+                        <ul>
+                            <li><strong>How to Check:</strong> Use Mauchly's Test of Sphericity (a non-significant p-value, typically p > .05, suggests sphericity is met). If Mauchly's Test is significant, it indicates a violation of sphericity. Statistical software will automatically provide corrected p-values (e.g., Greenhouse-Geisser or Huynh-Feldt corrections) which should be used instead.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Follow-Up Tests:</strong></dt>
+            <dd>
+                Needed if the Repeated Measures ANOVA for the within-subjects factor is statistically significant (p < .05). These tests help identify <strong>which specific repeated measures</strong> differ from each other.
+                <ul>
+                    <li><strong>Common Post-Hoc Tests:</strong> Often, pairwise comparisons using Paired Samples t-tests with a Bonferroni correction are performed. Some software also offers specific post-hoc tests for repeated measures.</li>
+                    <li><strong>When Not Needed:</strong> If the overall within-subjects effect is not statistically significant, or if you only have two repeated measures (in which case you would use a Paired Samples t-test instead).</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <h3>Linear Regression (Simple and Multiple)</h3>
+        <dl>
+            <dt><strong>Assumptions to Check:</strong></dt>
+            <dd>
+                <ul>
+                    <li><strong>Linearity:</strong> The relationship between the independent variable(s) and the dependent variable should be linear.
+                        <ul>
+                            <li><strong>How to Check:</strong> Create scatter plots of the dependent variable against each independent variable. Also, plot the residuals against the predicted values; there should be no clear pattern (e.g., curved, U-shaped).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Independence of Observations:</strong> Each observation (data point) in your dataset should be independent of all other observations. This is a design assumption.</li>
+                    <li><strong>Normality of Residuals:</strong> The errors (residuals) of the regression model should be approximately normally distributed.
+                        <ul>
+                            <li><strong>How to Check:</strong> Examine a histogram of the residuals and a Q-Q plot of the residuals. The histogram should look roughly bell-shaped, and the points on the Q-Q plot should fall close to the diagonal line.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Homoscedasticity (Constant Variance of Residuals):</strong> The variance (spread) of the residuals should be constant across all levels of the independent variable(s) and across the range of predicted values.
+                        <ul>
+                            <li><strong>How to Check:</strong> Plot the residuals against the predicted values. The spread of the residuals should look roughly even across the plot, without fanning out or narrowing.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Low Multicollinearity (for Multiple Regression):</strong> In multiple regression, independent variables should not be too highly correlated with each other. High multicollinearity makes it difficult to determine the unique contribution of each predictor.
+                        <ul>
+                            <li><strong>How to Check:</strong> Calculate the Variance Inflation Factor (VIF) for each independent variable. VIF values typically below 5 or 10 (depending on guidelines) are generally acceptable.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><strong>Follow-Up Tests:</strong></dt>
+            <dd>
+                Not applicable in the same way as ANOVA. Regression analysis focuses on the overall model fit and the individual contributions (coefficients) of each predictor. Further investigation typically involves examining the significance of individual coefficients, their confidence intervals, and the overall predictive power of the model.
+            </dd>
+        </dl>
+
+    </div>
