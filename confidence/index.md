@@ -58,3 +58,167 @@ Using other statistics collected from the sample, the researcher also calculates
     correct_answer="correct"
     solution_text="We are 95% confident that the true mean is between 4.6 and 8.2 days"
 %}
+
+<div class="instructions" markdown="1">
+
+### What factors influence the width of a confidence interval?
+
+The size of the confidence interval (the difference between the two values in the interval) is determined by:
+* the amount of spread there is in the sample data
+* the size of the sample
+* the level of confidence
+
+</div>
+
+Below are some confidence intervals for the mean where:
+Sample mean = 70, sample standard deviation = 5, sample size = 50.
+
+80% Confidence Interval (69.1 to 70.9)
+90% Confidence Interval (68.8 to 71.2)
+95% Confidence Interval (68.6 to 71.4)
+99% Confidence Interval (68.2 to 71.8)
+
+Each of these confidence intervals can be written as $\text{mean} \pm \text{margin of error}$.  So, for example, the 80% confidence interval can be written as:
+
+$$ 70 \pm 0.9$$
+
+So the margin of error here was 0.9.
+
+{% include question_numerical.html
+    id="ciq3a"
+    title="3a"
+    question_text="What is the margin of error for the 90% confidence interval?"
+    correct_answer="1.2"
+    tolerance="0"
+    solution_text="71.1 is 1.2 above the mean and 68.8 is 1.2 below the mean"
+%}
+
+{% include question_numerical.html
+    id="ciq3b"
+    title="3b"
+    question_text="What is the margin of error for the 95% confidence interval?"
+    correct_answer="1.4"
+    tolerance="0"
+    solution_text="71.4 is 1.4 above the mean and 68.6 is 1.6 below the mean"
+%}
+
+{% include question_numerical.html
+    id="ciq3c"
+    title="3c"
+    question_text="What is the margin of error for the 99% confidence interval?"
+    correct_answer="1.8"
+    tolerance="0"
+    solution_text="71.8 is 1.8 above the mean and 68.2 is 1.8 below the mean"
+%}
+
+{% include question_multiple_choice.html
+    id="ciq4"
+    title="4"
+    question_text="What do you notice between the relationship of confidence level and margin of error?"
+    options="wrong1::There is no relationship between the confidence level and the margin of error||wrong2::As the level of confidence increases, the margin of error decreases||correct::As the level of confidence increases, the margin of error increases"
+    correct_answer="correct"
+    solution_text="With the increasing confidence the margin of errors are 0.9, 1.2, 1.6, and 1.8"
+%}
+
+Below are 95% confidence intervals for different samples that have a mean of 70 and a standard deviation of 5.  The sample size is different for each of the samples:
+
+Sample size = 50; 95% Confidence Interval (68.6 to 71.4)
+
+Sample size = 10; 95% Confidence Interval (66.9 to 73.1)
+
+Sample size = 2000; 95% Confidence Interval (69.8 to 70.2)
+
+{% include question_multiple_choice.html
+    id="ciq5"
+    title="5"
+    question_text="What do you notice between the relationship of sample size and margin of error for the 95% confidence intervals?"
+    options="wrong1::There is no relationship between the confidence level and the margin of error||correct::As the sample size increases, the margin of error decreases||wrong2::As the sample increases, the margin of error increases"
+    correct_answer="correct"
+    solution_text="Sample size 50, margin of error is 1.4, sample size of 10, margin of error us 3.1, sample size of 2000, margin of error is 0.2"
+%}
+
+<div class="instructions" markdown="1">
+
+### Calculating a 95% confidence interval for the mean, with a known population standard deviation
+
+The margin of error in a confidence interval is determined by the level of confidence, the sample size, and the standard deviation in the sample.  When the population standard deviation is known you can use the formula, for a 95% confidence interval:
+
+$$\bar{x} \pm 1.96 \times \frac{\sigma}{\sqrt{n}} $$
+
+Where $\bar{x}$ is the sample mean, $\sigma$ is the population standard deviation, $n$ is the sample size.
+
+If the sample size is large, then this formula is a close approximation when using the sample standard deviation rather than the population.
+
+</div>
+
+{% include question_numerical.html
+    id="ciq6ai"
+    title="6a part i"
+    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 40, population standard deviation = 10, sample size = 100"
+    correct_answer="38.04"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{10}{\sqrt{10}}=1.96$ so  $40-1.96=38.04$"
+%}
+
+{% include question_numerical.html
+    id="ciq6aii"
+    title="6a part ii"
+    question_text="Calculate the upperr value of the 95% confidence interval if sample mean = 40, population standard deviation = 10, sample size = 100"
+    correct_answer="41.96"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{10}{\sqrt{10}}=1.96$ so  $40+1.96=41.96$"
+%}
+
+{% include question_numerical.html
+    id="ciq6bi"
+    title="6b part i"
+    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 25"
+    correct_answer="94.12"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{25}}=5.88$ so  $100-5.88=94.12$"
+%}
+
+{% include question_numerical.html
+    id="ciq6bii"
+    title="6b part ii"
+    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 25"
+    correct_answer="105.88"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{25}}=5.88$ so  $100+5.88=105.88$"
+%}
+
+{% include question_numerical.html
+    id="ciq6ci"
+    title="6c part i"
+    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 225"
+    correct_answer="98.04"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{225}}=1.96$ so  $100-1.96=98.04$"
+%}
+
+{% include question_numerical.html
+    id="ciq6cii"
+    title="6c part ii"
+    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 15, sample size = 225"
+    correct_answer="101.96"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{15}{\sqrt{225}}=1.96$ so  $100+1.96=101.96$"
+%}
+
+{% include question_numerical.html
+    id="ciq6di"
+    title="6d part i"
+    question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
+    correct_answer="90.2"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.2$"
+%}
+
+{% include question_numerical.html
+    id="ciq6dii"
+    title="6d part ii"
+    question_text="Calculate the upper value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
+    correct_answer="109.2"
+    tolerance="0"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=109.2$"
+%}
