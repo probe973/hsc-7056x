@@ -1,0 +1,40 @@
+# _config.yml
+
+# Site Settings
+title:            Statistics Course
+description:      An interactive course resource for students of HSC-7056X.
+author:           UEA # <<< ENSURE THIS IS UPDATED WITH YOUR NAME/ORG
+
+baseurl:          "/hsc-7056x" # <<< THIS MUST BE EXACTLY THIS
+
+url:              "https://probe973.github.io/hsc-7056x" # <<< Left blank as per your preference.
+
+# Jekyll Build Settings
+markdown:         kramdown
+highlighter:      rouge
+plugins:
+  # No SEO plugins needed.
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - README.md
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
