@@ -2,7 +2,7 @@
 layout: default
 title: Glossary
 ---
-
+<body>
     <div class="container">
         <h1>Statistics Glossary</h1>
 
@@ -549,3 +549,4 @@ title: Glossary
         </dl>
 
     </div>
+</body>
