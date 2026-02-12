@@ -53,5 +53,5 @@ The service offers:
                 <p>A glossary of statistical terms</p>
             </div>
         </div>
-   
+    </a>
 </div>
