@@ -430,3 +430,112 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+/* Taken from statistics workshop, will need to integrate */
+
+        /* --- Specific Styles for Glossary Content --- */
+        .glossary-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .glossary-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .term {
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .definition {
+            margin-left: 20px;
+            color: #444;
+        }
+        /* Example text styling - no box, just clear text */
+        .example-line { /* For individual lines within an example */
+            margin-left: 40px; /* Indent for clarity */
+            margin-bottom: 5px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .definition ul {
+            margin-left: 20px;
+            padding-left: 0;
+            list-style-type: disc; /* Ensure standard bullet points */
+        }
+        .definition ul li {
+            margin-bottom: 5px;
+        }
+        .chart-image {
+            max-width: 100%; /* Keep responsive behavior */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 15px auto; /* Center the image and provide vertical spacing */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Styles for horizontal histogram images */
+        .histogram-row {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            justify-content: space-around; /* Distribute space evenly */
+            gap: 15px; /* Space between items */
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .histogram-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center image and label */
+            flex: 1; /* Allow items to grow and shrink */
+            min-width: 280px; /* Minimum width before wrapping */
+            max-width: 320px; /* Max width for each item */
+            text-align: center;
+        }
+        .histogram-item .image-label {
+            margin-top: 8px; /* Space between image and label */
+            font-size: 0.95em;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* New styles for Table of Contents */
+        .table-of-contents {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .table-of-contents h3 {
+            color: #004085;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            font-size: 1.4em;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .table-of-contents ul li {
+            margin-bottom: 8px;
+        }
+        .table-of-contents ul li a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .table-of-contents ul li a:hover {
+            color: #004085;
+            text-decoration: underline;
+        }
