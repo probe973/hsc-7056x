@@ -145,7 +145,7 @@ title: Glossary
                     <li>Visualising the spread, skewness, and potential outliers of a dataset.</li>
                     <li>Comparing distributions between different groups or categories at a glance.</li>
                 </ul>
-                <img src="images/glossary/box_plot.png" alt="Vertical box plot, with labels top to bottom of max, Q3 (75%), Median (50%), Q1(25%), and Min." class="chart-image" width="800" height="489">
+                <img src="assets/images/glossary/box_plot.png" alt="Vertical box plot, with labels top to bottom of max, Q3 (75%), Median (50%), Q1(25%), and Min." class="chart-image" width="800" height="489">
             </div>
         </div>
         <div class="glossary-item">
@@ -161,7 +161,7 @@ title: Glossary
                     <li>Visualising averages across different groups.</li>
                     <li>Assessing the statistical significance of differences between group means; if the error bars (especially confidence intervals) of two groups do not overlap, it often suggests a statistically significant difference.</li>
                 </ul>
-                <img src="images/glossary/means_plot.png" alt="Means plot with 95% confidence intervals. There are two plots, on the left for group A on the right for group B. The mean for group B is higher than group A, the error bars do not overlap." class="chart-image" width="800" height="489">
+                <img src="assets/images/glossary/means_plot.png" alt="Means plot with 95% confidence intervals. There are two plots, on the left for group A on the right for group B. The mean for group B is higher than group A, the error bars do not overlap." class="chart-image" width="800" height="489">
             </div>
         </div>
         <div class="glossary-item">
@@ -186,15 +186,15 @@ title: Glossary
             </div>
             <div class="histogram-row">
                 <div class="histogram-item">
-                    <img src="images/glossary/hist_norm.png" alt="Histogram showing a normally distributed variable" class="chart-image" width="320" height="196">
+                    <img src="assets/images/glossary/hist_norm.png" alt="Histogram showing a normally distributed variable" class="chart-image" width="320" height="196">
                     <p class="image-label">Normal Distribution</p>
                 </div>
                 <div class="histogram-item">
-                    <img src="images/glossary/hist_pos_skew.png" alt="Histogram showing a tail to the right, a positive skew" class="chart-image" width="320" height="196">
+                    <img src="assets/images/glossary/hist_pos_skew.png" alt="Histogram showing a tail to the right, a positive skew" class="chart-image" width="320" height="196">
                     <p class="image-label">Positive Skew</p>
                 </div>
                 <div class="histogram-item">
-                    <img src="images/glossary/hist_neg_skew.png" alt="Histogram showing a tail to the left, a negative skew" class="chart-image" width="320" height="196">
+                    <img src="assets/images/glossary/hist_neg_skew.png" alt="Histogram showing a tail to the left, a negative skew" class="chart-image" width="320" height="196">
                     <p class="image-label">Negative Skew</p>
                 </div>
             </div>
@@ -208,7 +208,7 @@ title: Glossary
                     <li>Visualising the direction and strength of correlations (positive, negative, or no correlation).</li>
                     <li>Detecting outliers that deviate from the general pattern.</li>
                 </ul>
-                <img src="images/glossary/scatter.png" alt="Scatter diagram of variable x against variable y. There is a moderate positive correlation shown, with points scattered from bottom left to top right." class="chart-image" width="800" height="489">
+                <img src="assets/images/glossary/scatter.png" alt="Scatter diagram of variable x against variable y. There is a moderate positive correlation shown, with points scattered from bottom left to top right." class="chart-image" width="800" height="489">
             </div>
         </div>
 
