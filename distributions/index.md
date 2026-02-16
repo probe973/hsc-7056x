@@ -17,31 +17,42 @@ Consider the following dataset:
      
    $34, 35, 35, 36, 40, 40, 40, 40, 41, 42, 44, 47$
 
-{% include question_numerical.html
-    id="q1_mean"
-    title="Question 1a: Find the Mean"
-    question_text="Find the **mean** of the dataset above. (Round to two decimal places if necessary)"
-    correct_answer="39.58"
-    tolerance="0.01"
-    solution_text="The mean is calculated as the sum of all values divided by the number of values ($\frac{\sum x}{N}$).  $\frac{475}{12} = 39.58$."
-%}
 
-{% include question_numerical.html
-    id="q1_median"
-    title="Question 1b: Find the Median"
-    question_text="Find the **median** of the dataset above."
-    correct_answer="40"
-    tolerance="0"
-    solution_text="Since there is an even number of values (12), the median is the average of the two middle values (the 6th and 7th values): $\frac{40 + 40}{2} = 40$."
-%}
+{% capture stats1 %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th scope="col">Statistic</th>
+    <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+            <td>Mean</td>
+            <td><input type="number" step="any" aria-label="Mean of the data set"></td>
+       </tr>
+       <tr>
+            <td>Median</td>
+            <td><input type="number" step="any" aria-label="Median of the data set"></td>
+       </tr>
+       <tr>
+            <td>Range</td>
+            <td><input type="number" step="any" aria-label="Range of the data set"></td>
+       </tr>
+  </tbody>
+</table>
+{% endcapture %}
 
-{% include question_numerical.html
-    id="q1_range"
-    title="Question 1c: Find the Range"
-    question_text="Find the **range** of the dataset above."
-    correct_answer="13"
-    tolerance="0"
-    solution_text="The range is the largest value minus the smallest value: $47 - 34 = 13$."
+{% include table_fill.html 
+   id="statsq1" 
+   title="1"
+   question_text="Calculate the mean, the median, and the range, rounding to 2 decimal places if necessary:"
+   table_content=stats1
+   answers="39.58 || 40 || 13"
+   tolerance="0.005" 
+   solution_text="The mean is calculated as the sum of all values divided by the number of values ($\frac{\sum x}{N}$).  $\frac{475}{12} = 39.58$. <br>
+   Since there is an even number of values (12), the median is the average of the two middle values (the 6th and 7th values): $\frac{40 + 40}{2} = 40$.<br>
+   The range is the largest value minus the smallest value: $47 - 34 = 13$."
 %}
 
 ---
@@ -96,16 +107,51 @@ Consider the following three sets of data:
    Set B:		$3, 5, 5, 9, 16, 21, 22, 30, 33$  
    Set C:		$21, 24, 25, 26, 26, 27, 27, 27, 27, 28, 29, 30$ 
 
-{% include question_dropdown.html
-    id="q3_stats"
-    title="Question 3a: Calculate Summary Statistics"
-    question_text="For each set of data, calculate the summary statistics of the median, the mean, and the range."
-    solution_text="
-**Set A (N=12):** Mean = 16.33, Median = 16.0, Range = 8  
-**Set B (N=9):** Mean = 16, Median = 16.0, Range = 30  
-**Set C (N=12):** Mean = 26.42, Median = 27.0, Range = 9  
-"
+{% capture stats2 %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th scope="col">Statistic</th>
+    <th scope="col">Set A</th>
+     <th scope="col">Set B</th>
+     <th scope="col">Set C</th>
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+            <td>Mean</td>
+            <td><input type="number" step="any" aria-label="Mean of the data set A"></td>
+            <td><input type="number" step="any" aria-label="Mean of the data set B"></td>
+            <td><input type="number" step="any" aria-label="Mean of the data set C"></td>
+       </tr>
+       <tr>
+            <td>Median</td>
+            <td><input type="number" step="any" aria-label="Median of the data set A"></td>
+            <td><input type="number" step="any" aria-label="Median of the data set B"></td>
+            <td><input type="number" step="any" aria-label="Median of the data set C"></td>
+       </tr>
+       <tr>
+            <td>Range</td>
+            <td><input type="number" step="any" aria-label="Range of the data set A"></td>
+            <td><input type="number" step="any" aria-label="Range of the data set B"></td>
+            <td><input type="number" step="any" aria-label="Range of the data set C"></td>
+       </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+{% include table_fill.html 
+   id="statsq3a" 
+   title="3a"
+   question_text="Calculate the mean, the median, and the range, rounding to 2 decimal places if necessary, of the three data sets:"
+   table_content=stats2
+   answers="16.33 || 16 || 26.42 || 16 || 16 || 27 || 8 || 30 || 9"
+   tolerance="0.005" 
+   solution_text="**Set A (N=12):** Mean = 16.33, Median = 16.0, Range = 8 <br>
+   **Set B (N=9):** Mean = 16, Median = 16.0, Range = 30 <br>
+   **Set C (N=12):** Mean = 26.42, Median = 27.0, Range = 9"
 %}
+
 
 {% include question_dropdown.html
     id="q3_contrast"
