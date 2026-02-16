@@ -224,12 +224,44 @@ Consider the following histograms and statistics:
 | Skew | -0.64 | 0 | 0 | 0 |
 
 
-{% include question_dropdown.html
-    id="q5_match"
-    title="Question 5: Match the Statistics to the Histograms"
-    question_text="Match each of the histograms to one of the sets of statistics provided above."
-    solution_text="
-**Analysis and Matching:**
+{% capture distributions1 %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th scope="col">Histogram</th>
+    <th scope="col">Dataset number</th>
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+            <td>A</td>
+            <td><input type="number" step="any" aria-label="Histogram A set number"></td>
+       </tr>
+       <tr>
+            <td>B</td>
+            <td><input type="number" step="any" aria-label="Histogram B set number"></td>
+       </tr>
+       <tr>
+            <td>C</td>
+            <td><input type="number" step="any" aria-label="Histogram C set number"></td>
+       </tr>
+       <tr>
+            <td>D</td>
+            <td><input type="number" step="any" aria-label="Histogram D set number"></td>
+       </tr>
+  </tbody>
+</table>
+{% endcapture %}
+
+{% include table_fill.html 
+   id="distq5" 
+   title="5"
+   question_text="Match each of the histograms to one of the sets of statistics provided above."
+   table_content=distributions1
+   answers="2 || 3 || 4 || 1"
+   tolerance="0.5" 
+   solution_text="
+   **Analysis and Matching:**
 1.  **Look at Mean/Median/Skew:** One set of data has a Mean of 29.9 and a Median of 30. This is significantly lower than the other sets (which are near 50). This must be the histogram that is clustered more to to the **left** of the others on the horizontal axis, histogram A.
 2.  **Look at Skew:** One set has a Skew of -0.64. This indicates a **Negative Skew (Skewed Left)**. This must be the histogram with the long tail extending to the left, histogram D.
 3.  **Look at Standard Deviation (Dispersion):** Two remaining sets are symmetrical (Skew=0). One has a low SD (5.7) and one has a high SD (11.4). The low SD set must match the histogram that is the **least dispersed**. The high SD set must match the histogram that is the **most spread out**.
@@ -239,5 +271,5 @@ Consider the following histograms and statistics:
 *   **Histogram B** Matches Mean = 50, SD = 5.7 **Set 3**.
 *   **Histogram C:** Matches Mean = 49.4, SD = 11.4 **Set 4**
 *   **Histogram D:** Matches SKew = -0.64 **Set 1**.
-"
+*   "
 %}
