@@ -47,15 +47,15 @@ $$\text{Relative Risk} = \frac{\text{Risk in intervention group}}{\text{Risk in 
   <tbody>
     <tr>
       <td>New Treatment</td>
-      <td><input type="number" step="any" aria-label="New Sweaty"></td>
-      <td><input type="number" step="any" aria-label="New Non-Sweaty"></td>
-      <td><input type="number" step="any" aria-label="New Total"></td>
+      <td><input type="number" step="any" aria-label="New treatment sweaty palms count"></td>
+      <td><input type="number" step="any" aria-label="New treatment non-sweaty palms count"></td>
+      <td><input type="number" step="any" aria-label="New treatment total count"></td>
     </tr>
     <tr>
       <td>Standard Treatment</td>
-      <td><input type="number" step="any" aria-label="Old Sweaty"></td>
-      <td><input type="number" step="any" aria-label="Old Non-Sweaty"></td>
-      <td><input type="number" step="any" aria-label="Old Total"></td>
+      <td><input type="number" step="any" aria-label="Standard treatment sweaty palms count"></td>
+      <td><input type="number" step="any" aria-label="Standard treatment non-sweaty palms count"></td>
+      <td><input type="number" step="any" aria-label="Standard treatment total count"></td>
     </tr>
   </tbody>
 </table>
@@ -101,6 +101,7 @@ $$\text{Odds} = \frac{\text{Number of events}}{\text{Number of non-events}}$$
 In a **retrospective case-control study**, we start with people who already have a condition (cases) and look back. In these studies, we often don't know the total population at risk, so we cannot calculate Risk. Instead, we use the **Odds Ratio (OR)**.
 
 $$\text{Odds Ratio} = \frac{\text{Odds of exposure in cases}}{\text{Odds of exposure in controls}}$$
+
 </div>
 
 ### Question 2: Retrospective Study (Bungee Jumping)
@@ -112,22 +113,36 @@ $$\text{Odds Ratio} = \frac{\text{Odds of exposure in cases}}{\text{Odds of expo
 | **Exposed** | 64 | 40 |
 | **Not Exposed** | 256 | 320 |
 
-{% include question_numerical.html
-    id="odds_q1"
-    title="2a"
-    question_text="Calculate the **odds** of exposure for the Ruptured group."
-    correct_answer="0.25"
-    tolerance="0"
-    solution_text="$\text{Odds} = 64 / 256 = 0.25$."
+{% include question_dropdown.html
+    id="odds_q2a"
+    title="2a: Show your work"
+    question_text="The odds of exposure in the ruptured group is 0.25. Which calculation correctly shows how this value is reached?"
+    solution_text="Odds is Events (64) divided by Non-events (256). $64 / 256 = 0.25$."
 %}
 
 {% include question_numerical.html
-    id="odds_q2"
-    title="2b"
+    id="odds_q2b"
+    title="2b: Calculate control odds"
+    question_text="Calculate the **odds** of exposure in the group where ruptured nodules **did not** occur (the controls)."
+    correct_answer="0.125"
+    tolerance="0"
+    solution_text="For the controls: $40 / 320 = 0.125$."
+%}
+
+{% include question_numerical.html
+    id="odds_q2c"
+    title="2c: Calculate the Odds Ratio"
     question_text="Calculate the **Odds Ratio (OR)** for exposure in the Ruptured group compared to the No Rupture group."
     correct_answer="2.0"
     tolerance="0"
-    solution_text="$\text{Control Odds} = 40 / 320 = 0.125$. <br> $\text{OR} = 0.25 / 0.125 = 2.0$."
+    solution_text="$\text{OR} = 0.25 / 0.125 = 2.0$."
+%}
+
+{% include question_dropdown.html
+    id="odds_q2d"
+    title="2d: Interpretation"
+    question_text="How would you interpret this odds ratio?"
+    solution_text="The odds of having been exposed to a cold bungee are 2 times higher for those with ruptured nodules compared to those without."
 %}
 
 ---
@@ -145,25 +160,46 @@ In medical research papers, you will often see Odds Ratios reported from "Multiv
 
 ### Question 3: Interpreting Regression Results
 
-The following table shows factors associated with **delayed discharge** in geriatric wards.
+The following table includes all factors from a study on **delayed discharge**.
 
-| Factor | OR | P-value | 95% CI |
-| :--- | :--- | :--- | :--- |
-| **Discharge EMS $\ge$ 14** | 0.72 | 0.075 | 0.50 – 1.03 |
-| **Lives Alone** | 1.98 | <0.001 | 1.40 – 2.81 |
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Factor</th>
+      <th scope="col">P</th>
+      <th scope="col">OR</th>
+      <th scope="col">95% CI for OR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Discharge EMS &ge; 14</td><td>0.075</td><td>0.72</td><td>0.50 – 1.03</td></tr>
+    <tr><td>CFS &ge; 5</td><td>0.009</td><td>1.74</td><td>1.15 – 2.63</td></tr>
+    <tr><td>Delirium</td><td>0.008</td><td>1.79</td><td>1.17 – 2.74</td></tr>
+    <tr><td>Lives Alone</td><td>&lt;0.001</td><td>1.98</td><td>1.40 – 2.81</td></tr>
+    <tr><td>New Institutionalization</td><td>&lt;0.001</td><td>2.78</td><td>1.67 – 4.62</td></tr>
+    <tr><td>New Package of Care</td><td>&lt;0.001</td><td>4.05</td><td>2.68 – 6.10</td></tr>
+  </tbody>
+</table>
 
-{% include question_multiple_choice.html
-    id="reg_q1"
+{% include question_dropdown.html
+    id="reg_q3a"
     title="3a"
-    question_text="Is the 'EMS $\ge$ 14' factor a statistically significant predictor of delayed discharge at the 5% level?"
-    options="no::No, because p > 0.05 and the CI includes 1.0||yes::Yes, because the OR is less than 1.0"
-    correct_answer="no"
-    solution_text="The p-value is 0.075 (greater than 0.05) and the Confidence Interval includes 1.0, so it is not significant."
+    question_text="Based on the table, are there higher or lower odds of a delayed discharge if the patient has a discharge EMS of 14 or greater? Is this significant at the 5% level?"
+    solution_text="The OR is 0.72 (lower odds), and the p-value is 0.075 (not significant at the 5% level)."
 %}
 
 {% include question_dropdown.html
-    id="reg_q2"
+    id="reg_q3b"
     title="3b"
-    question_text="Interpret the Odds Ratio for 'Lives Alone'."
-    solution_text="The OR is 1.98, which is approximately 2. This means patients who live alone have nearly double (2x) the odds of a delayed discharge compared to those who do not live alone. This result is highly significant (p < 0.001)."
+    question_text="Does the 95% Confidence Interval for the EMS variable concur with the significance result found in Question 3a?"
+    solution_text="Yes. The interval 0.50 to 1.03 includes 1.0, meaning the result is not statistically significant."
+%}
+
+{% include question_numerical.html
+    id="reg_q3c"
+    title="3c"
+    question_text="Approximately how many times **higher** are the odds of being delayed in discharge if the patient lives alone?"
+    correct_answer="1.98"
+    tolerance="0.02"
+    solution_text="The OR for 'Lives Alone' is 1.98, which is nearly double the odds."
 %}
