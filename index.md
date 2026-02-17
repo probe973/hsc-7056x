@@ -57,7 +57,7 @@ Welcome to the Learning Enhancement Team (LET) resources for HSC-7056X. This sit
             </div>
         </div>
     </a>
-    <a href="{{ "/reading/" | relative_url }}" class="card">
+    <a href="{{ "/papers/" | relative_url }}" class="card">
         <div class="card-content">
             <!-- ICON REMOVED -->
             <div class="card-text">
