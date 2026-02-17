@@ -19,7 +19,7 @@ This workshop focuses on interpreting statistical methodology and results from a
 
 **1.** The extract above describes how the researchers treated their data. Assuming the authors used the correct tests for their variables, identify the **level of measurement** (Nominal, Ordinal, or Interval/Ratio) for each of the following:
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q1a"
     title="1a"
     question_text="Student agreement toward EBP beliefs (categorized as disagreement vs. agreement)."
@@ -28,7 +28,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="The researchers 'collapsed' the categories into named groups: disagreement vs. agreement. This makes the data **Nominal**."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q1b"
     title="1b"
     question_text="The total scores of the EBP belief and implementation scales (analyzed using Pearson’s correlation)."
@@ -37,7 +37,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="Total scores analyzed using Pearson's correlation require **Interval/Ratio** data."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q1c"
     title="1c"
     question_text="The training status of the students (trained vs. untrained) as used in an independent samples t-test."
@@ -88,7 +88,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="The table shows 163 students said 'Yes' to training, which is 67.6%."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q2c"
     title="2c"
     question_text="Approximately how many female participants were there for every male participant in this study?"
@@ -134,7 +134,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="$77.9\% - 64.1\% = 13.8$ percentage points."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q3c"
     title="3c"
     question_text="In almost every row, the Trained group has higher agreement. However, for Statements 11 ('takes too much time') and 13 ('is difficult'), the **Untrained** group has higher agreement. How should a researcher interpret this?"
@@ -156,7 +156,7 @@ This workshop focuses on interpreting statistical methodology and results from a
 
 **4.** Referring to Table 4:
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q4a"
     title="4a"
     question_text="Identify the statistical test indicated by the column labeled **'t'** in Table 4. What is it being used for here?"
@@ -165,7 +165,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="The 't' indicates a t-test. It is comparing the average (mean) scores of the two independent groups."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q4b"
     title="4b"
     question_text="Look at the row for 'Total score: beliefs.' Which of the following is the correct justification for whether the training made a significant difference?"
@@ -174,7 +174,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     solution_text="Significance is determined by the p-value. Since $0.042 < 0.05$, the difference is statistically significant."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="q4c"
     title="4c"
     question_text="Compare the results for 'Beliefs' ($p = .042$) and 'Implementations' ($p = .002$). Which statement accurately summarizes the results?"
