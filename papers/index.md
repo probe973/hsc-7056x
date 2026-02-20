@@ -12,7 +12,7 @@ Here you will find examples of reading statistical results in papers.
 
 <!-- Topic Cards (replacing the old buttons) -->
 <div class="card-menu">
-    <a href="{{ "tables.html" | relative_url }}" class="card">
+    <a href="{{ "tables.html" }}" class="card">
         <div class="card-content">
             <!-- ICON REMOVED -->
             <div class="card-text">
@@ -21,7 +21,7 @@ Here you will find examples of reading statistical results in papers.
             </div>
         </div>
     </a>
-    <a href="{{ "abu-baker.html" | relative_url }}" class="card">
+    <a href="{{ "abu-baker.html" }}" class="card">
         <div class="card-content">
             <!-- ICON REMOVED -->
             <div class="card-text">
@@ -30,7 +30,7 @@ Here you will find examples of reading statistical results in papers.
             </div>
         </div>
     </a>   
-    <a href="{{ "sackley.html" | relative_url }}" class="card">
+    <a href="{{ "sackley.html" }}" class="card">
         <div class="card-content">
             <!-- ICON REMOVED -->
             <div class="card-text">
