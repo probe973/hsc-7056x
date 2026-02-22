@@ -59,7 +59,7 @@ The service offers:
             <!-- ICON REMOVED -->
             <div class="card-text">
                 <h3>Statistics Intro Quiz</h3>
-                <p>A short quiz on statistics/p>
+                <p>A short quiz on statistics</p>
             </div>
         </div>
     </a>
