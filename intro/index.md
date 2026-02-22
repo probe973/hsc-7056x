@@ -54,4 +54,13 @@ The service offers:
             </div>
         </div>
     </a>
+  <a href="{{ "/intro/quiz.html" | relative_url }}" class="card">
+        <div class="card-content">
+            <!-- ICON REMOVED -->
+            <div class="card-text">
+                <h3>Statistics Intro Quiz</h3>
+                <p>A short quiz on statistics/p>
+            </div>
+        </div>
+    </a>
 </div>
