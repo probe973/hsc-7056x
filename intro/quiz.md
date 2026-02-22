@@ -62,7 +62,7 @@ The exercise below will give you a set of statistical words, each with a numeric
             <td><input type="number" step="any" aria-label="Range of the data set"></td>
        </tr>
     <tr>
-            <td>he probability that a study will correctly detect a real effect when one truly exists</td>
+            <td>The probability that a study will correctly detect a real effect when one truly exists</td>
             <td><input type="number" step="any" aria-label="Range of the data set"></td>
        </tr>
     <tr>
@@ -80,7 +80,7 @@ The exercise below will give you a set of statistical words, each with a numeric
 {% include table_fill.html 
    id="introq" 
    title="Match"
-   question_text="Type in the numerical value that matches the definition, from the list given."
+   question_text="Type in the numerical value that best matches the definition, from the list given."
    table_content=introquiz
    answers="2 || 5 || 1 || 4 || 7 || 3 || 6 || 8 || 9 || 10"
    tolerance="0" 
