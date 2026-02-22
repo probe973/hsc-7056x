@@ -81,7 +81,7 @@ The exercise below will give you a set of statistical words, each with a numeric
    id="introq" 
    title="Match"
    question_text="Type in the numerical value that matches the definition, from the list given."
-   table_content=stats1
+   table_content=introquiz
    answers="2 || 5 || 1 || 4 || 7 || 3 || 6 || 8 || 9 || 10"
    tolerance="0" 
    solution_text="Answers are only shown as correct or incorrect for this quiz"
