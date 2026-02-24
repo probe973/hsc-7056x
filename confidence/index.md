@@ -104,7 +104,7 @@ So the margin of error here was 0.9.
     question_text="What is the margin of error for the 95% confidence interval?"
     correct_answer="1.4"
     tolerance="0"
-    solution_text="71.4 is 1.4 above the mean and 68.6 is 1.6 below the mean"
+    solution_text="71.4 is 1.4 above the mean and 68.6 is 1.4 below the mean"
 %}
 
 {% include question_numerical.html
@@ -137,7 +137,7 @@ Sample size = 2000; 95% Confidence Interval (69.8 to 70.2)
     id="ciq5"
     title="5"
     question_text="What do you notice between the relationship of sample size and margin of error for the 95% confidence intervals?"
-    options="wrong1::There is no relationship between the confidence level and the margin of error||correct::As the sample size increases, the margin of error decreases||wrong2::As the sample increases, the margin of error increases"
+    options="wrong1::There is no relationship between the sample size and the margin of error||correct::As the sample size increases, the margin of error decreases||wrong2::As the sample increases, the margin of error increases"
     correct_answer="correct"
     solution_text="Sample size 50, margin of error is 1.4, sample size of 10, margin of error is 3.1, sample size of 2000, margin of error is 0.2"
 %}
@@ -214,9 +214,9 @@ If the sample size is large, then this formula is a close approximation when usi
     id="ciq6di"
     title="6d part i"
     question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
-    correct_answer="90.2"
+    correct_answer="90.8"
     tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.2$"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.8$"
 %}
 
 {% include question_numerical.html
