@@ -111,10 +111,10 @@ A p-value of less than 0.05 is considered evidence of a difference **at the 5% l
 {% include question_multiple_choice.html
     id="ttestq6"
     title="6"
-    question_text="For this experiment: $t = 2.08$, $\text{df} = 9$, $p = 0.0673$.  <br> Would these statistics give evidence that the people of Norwich have a significantly different IQ to 100, at the 5% level."
+    question_text="For this IQ experiment: $t = 2.08$, $\text{df} = 9$, $p = 0.0673$.  <br> Would these statistics give evidence that the people of Norwich have a significantly different IQ to 100, at the 5% level."
     options="no::Not enough evidence of a difference in IQ from 100||yes::There is evidence of a difference in IQ from 100"
     correct_answer="no"
-    solution_text="No, since for this case $p=.0673 \gt 0.05$, thre is not enough evidence of a difference from 100."
+    solution_text="No, since for this case $p=.0673 \gt 0.05$, there is not enough evidence of a difference from 100."
 %}
 
 ---
@@ -171,9 +171,9 @@ For example, you may be looking to see if there is a difference in a mobility sc
 
 For an independent-samples t-test:
 
-$$t=\frac{\bar{x_1} - \bar{x_2}}{\text{SE of difference}}$$
+$$t=\frac{\bar{x}_1 - \bar{x}_2}{\text{SE of difference}}$$
 
-Where $\bar{x_1}$ and $\bar{x_2}$ are the sample means of groups 1 and 2.
+Where $\bar{x}_1$ and $\bar{x}_2$ are the sample means of groups 1 and 2.
 
 ### Degrees of Freedom
 
@@ -219,5 +219,5 @@ $$t = 2.03, p=.0493$$
     question_text="Given the information above, is there evidence of a difference in blood pressures between the control and the treatment groups?"
     options="no::Not enough evidence of a difference in IQ from 100||yes::There is evidence of a difference in IQ from 100"
     correct_answer="yes"
-    solution_text="Yes, since for this case $p=.0493 \lt 0.05$, thre is evidence of a difference between the two groups."
+    solution_text="Yes, since for this case $p=.0493 \lt 0.05$, there is evidence of a difference between the two groups, at the 5% level."
 %}
