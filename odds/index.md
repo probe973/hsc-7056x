@@ -14,7 +14,7 @@ This workshop focuses on understanding how to quantify the likelihood of an even
 <div class="explanation" markdown="1">
 ## Risk and Relative Risk (RR)
 
-**Risk** is the same as probability. it is the number of people who experience an event divided by the total number of people in that group.
+**Risk** is the number of people who experience an event divided by the total number of people in that group.
 
 $$\text{Risk} = \frac{\text{Number of events}}{\text{Total number in group}}$$
 
@@ -24,7 +24,7 @@ $$\text{Relative Risk} = \frac{\text{Risk in intervention group}}{\text{Risk in 
 
 *   **RR = 1**: The risk is the same in both groups.
 *   **RR > 1**: The risk is higher in the intervention group.
-*   **RR < 1**: The risk is lower in the intervention group (the treatment may be protective).
+*   **RR < 1**: The risk is lower in the intervention group.
 </div>
 
 ### Question 1: Clinical Trial Data
@@ -87,6 +87,15 @@ $$\text{Relative Risk} = \frac{\text{Risk in intervention group}}{\text{Risk in 
     correct_answer="0.625"
     tolerance="0.005"
     solution_text="$\text{Standard Risk} = 120 / 240 = 0.5$. <br> $\text{RR} = 0.3125 / 0.5 = 0.625$."
+%}
+
+{% include question_multiple_choice.html
+    id="risk_calc_1d"
+    title="1d Interpret"
+    question_text="How would you interpret the risk of sweaty palms in the new treatment compared to the standard treatment?"
+    options="w1::There is no difference in risk||w2::There is an increased risk in the new treatment group ||c::There is a decreased risk in the new treatment group"
+    correct_answer="c"
+    solution_text="RR<1, so reduced risk"
 %}
 
 ---
