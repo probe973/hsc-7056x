@@ -66,4 +66,13 @@ Welcome to the Learning Enhancement Team (LET) resources for HSC-7056X. This sit
             </div>
         </div>
     </a>
+    <a href="{{ "/pdf/" | relative_url }}" class="card">
+        <div class="card-content">
+            <!-- ICON REMOVED -->
+            <div class="card-text">
+                <h3>PDFs of the workshops</h3>
+                <p>Portable document formats of the workshops, if you want to print.  There are questions and solutions.</p>
+            </div>
+        </div>
+    </a>
 </div>
