@@ -233,6 +233,8 @@ This workshop uses data from the research paper: *“An occupational therapy int
 §EuroQol group 5-dimension self report questionnaire (three levels).
 </p>
 
+Considering the results for the **Barthel Index**
+
 {% include question_multiple_choice.html
     id="s_q7"
     title="7"
