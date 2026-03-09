@@ -147,7 +147,7 @@ This workshop uses data from the research paper: *“An occupational therapy int
     </tr>
   </thead>
   <tbody>
-    <tr><th scope="row" colspan="7" style="background-color: #f2f2f2;">Barthel index</th></tr>
+    <tr><th scope="row" colspan="7" style="background-color: #f2f2f2;">Barthel index‡</th></tr>
     <tr>
       <th scope="row">6 months</th>
       <td aria-label="Intervention, 6 months Barthel: 4.78, Standard Error: 0.20">4.78 (0.20)</td>
@@ -165,6 +165,63 @@ This workshop uses data from the research paper: *“An occupational therapy int
       <td>430</td>
       <td aria-label="Difference: 0.16, CI: -0.40 to 0.72">0.16 (−0.40 to 0.72)</td>
       <td>0.58</td>
+    </tr>
+    <tr><th scope="row" colspan="7" style="background-color: #f2f2f2;">Rivermead mobility index</th></tr>
+    <tr>
+      <th scope="row">6 months</th>
+      <td aria-label="Intervention, 6 months Rivermead: 2.64, SE: 0.11">2.64 (0.11)</td>
+      <td>421</td>
+      <td aria-label="Control, 6 months Rivermead: 2.67, SE: 0.12">2.67 (0.12)</td>
+      <td>346</td>
+      <td>−0.03 (−0.33 to 0.27)</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <th scope="row">12 months</th>
+      <td aria-label="Intervention, 12 months Rivermead: 2.19, SE: 0.13">2.19 (0.13)</td>
+      <td>354</td>
+      <td aria-label="Control, 12 months Rivermead: 2.46, SE: 0.14">2.46 (0.14)</td>
+      <td>271</td>
+      <td>−0.26 (−0.62 to 0.09)</td>
+      <td>0.15</td>
+    </tr>
+    <tr><th scope="row" colspan="7" style="background-color: #f2f2f2;">Geriatric depression scale-15</th></tr>
+    <tr>
+      <th scope="row">6 months</th>
+      <td aria-label="Intervention, 6 months Depression: 6.20, SE: 0.21">6.20 (0.21)</td>
+      <td>338</td>
+      <td aria-label="Control, 6 months Depression: 6.68, SE: 0.22">6.68 (0.22)</td>
+      <td>284</td>
+      <td>−0.48 (−1.04 to 0.09)</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th scope="row">12 months</th>
+      <td aria-label="Intervention, 12 months Depression: 6.22, SE: 0.22">6.22 (0.22)</td>
+      <td>297</td>
+      <td aria-label="Control, 12 months Depression: 6.40, SE: 0.25">6.40 (0.25)</td>
+      <td>219</td>
+      <td>−0.18 (−0.80 to 0.43)</td>
+      <td>0.56</td>
+    </tr>
+    <tr><th scope="row" colspan="7" style="background-color: #f2f2f2;">EQ-5D-3L§</th></tr>
+    <tr>
+      <th scope="row">6 months</th>
+      <td aria-label="Intervention, 6 months EQ5D: 0.22, SE: 0.02">0.22 (0.02)</td>
+      <td>363</td>
+      <td aria-label="Control, 6 months EQ5D: 0.23, SE: 0.02">0.23 (0.02)</td>
+      <td>315</td>
+      <td>−0.01 (−0.05 to 0.04)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <th scope="row">12 months</th>
+      <td aria-label="Intervention, 12 months EQ5D: 0.20, SE: 0.02">0.20 (0.02)</td>
+      <td>316</td>
+      <td aria-label="Control, 12 months EQ5D: 0.18, SE: 0.02">0.18 (0.02)</td>
+      <td>244</td>
+      <td>0.02 (−0.03 to 0.07)</td>
+      <td>0.48</td>
     </tr>
   </tbody>
 </table>
@@ -236,7 +293,7 @@ This workshop uses data from the research paper: *“An occupational therapy int
     question_text="Do any of the 6-month or 12-month comparisons (Barthel, Mobility, Depression, EQ-5D) show evidence of a difference?"
     options="none_sig::No; every p-value in Table 4 is greater than 0.05.||some_sig::Yes; the Mobility index at 12 months is significant.||all_sig::Yes; all results are significant at 12 months."
     correct_answer="none_sig"
-    solution_text="Scanning the 'P value' column, all values (0.99, 0.58, 0.84, 0.15, etc.) are above 0.05."
+    solution_text="Scanning the 'P value' column, all values (0.99, 0.58, 0.84, 0.15, 0.10, 0.56, 0.72, 0.48) are above 0.05."
 %}
 
 
