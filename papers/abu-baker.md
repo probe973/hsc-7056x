@@ -214,7 +214,7 @@ This workshop focuses on interpreting statistical methodology and results from a
     id="q4a"
     title="4a"
     question_text="Identify the statistical test indicated by the column labeled **'t'** in Table 4. What is it being used for here?"
-    options="opt1::Chi-square; comparing frequencies of agreement.||opt2::Independent samples t-test; comparing the mean scores of the two groups.||opt3::Pearson correlation; measuring the relationship between belief and implementation."
+    options="opt1::Chi-square; comparing frequencies of agreement.||opt2::Independent samples t-test; comparing the mean scores of the two groups.||opt3::Paired samples t-test; comparing the mean scores between two time points."
     correct_answer="opt2"
     solution_text="The 't' column indicates an independent samples t-test, which compares the average (mean) scores of two separate groups."
 %}
