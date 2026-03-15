@@ -45,164 +45,98 @@ Different statistical tests use different effect size measures. Here are some co
 
 ### 2. Partial Eta-squared (η²p) (for ANOVA)
 
-**What it measures:** Partial Eta-squared represents the proportion of variance in the dependent variable that is explained by a specific independent variable, after accounting for other factors in the model. It's commonly used in ANOVA.
+**What it measures:** Partial Eta-squared represents the proportion of variance in the dependent variable that is explained by a specific independent variable (or factor in an ANOVA), after accounting for other factors in the model. It's commonly used in ANOVA.
 **Interpretation Guidelines:**
 *   **Small effect:** η²p = 0.01 (1% of variance explained)
 *   **Medium effect:** η²p = 0.06 (6% of variance explained)
 *   **Large effect:** η²p = 0.14 (14% of variance explained)
 *   **Note:** Like Cohen's d, these are general guidelines, and context is important.
 
-### 3. Cramer's V (for Chi-square tests)
-
-**What it measures:** Cramer's V is a measure of the strength of association between two nominal (categorical) variables. It ranges from 0 (no association) to 1 (perfect association). It's commonly used with chi-square tests of independence.
-**Interpretation Guidelines:** The interpretation of Cramer's V depends on the degrees of freedom (df), which is determined by the number of rows and columns in the contingency table (df = min(number of rows - 1, number of columns - 1)).
-*   **For df = 1 (e.g., a 2x2 table):**
-    *   **Small effect:** V = 0.10
-    *   **Medium effect:** V = 0.30
-    *   **Large effect:** V = 0.50
-*   **For df = 2 (e.g., a 2x3 or 3x3 table):**
-    *   **Small effect:** V = 0.07
-    *   **Medium effect:** V = 0.21
-    *   **Large effect:** V = 0.35
-*   **Note:** As the degrees of freedom increase, the thresholds for small, medium, and large effects tend to decrease. Always refer to the appropriate guidelines for your specific table dimensions.
-
 </div>
 
 ---
 
-### Memory Boost
+### New Pain Management Therapy
 
-A new memory training program has been developed, and researchers want to assess its effectiveness. They recruit a group of participants and measure their memory recall scores before the program and after completing a 6-week program. Higher scores indicate better memory recall.
+A clinical trial investigates the effectiveness of a new pain management therapy compared to a standard placebo treatment for chronic back pain. Two separate groups of patients are recruited: one receives the new therapy, and the other receives a placebo. Pain levels are measured using a validated scale (0-10, with higher scores indicating more pain) after 4 weeks of treatment.
 
-A **paired-samples t-test** is performed, and **Cohen's d** is calculated as a measure of effect size.
+An **independent-samples t-test** is performed to compare the mean pain levels between the two groups. **Cohen's d** is calculated as a measure of effect size.
 
-| | N | Mean | SD | Mean Difference (After – Before) | 95% CI for Mean Difference | t | p | Cohen's d |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Before Program | 80 | 25.4 | 4.8 | 2.1 | (1.1, 3.1) | 4.15 | < 0.001 | 0.46 |
-| After Program | 80 | 27.5 | 5.1 | | | | | |
+| Group | N | Mean Pain Score | SD | t | p | Cohen's d |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| New Therapy | 40 | 3.2 | 1.1 | -4.85 | < 0.001 | 0.98 |
+| Placebo | 40 | 5.5 | 1.2 | | | |
 
 {% include question_multiple_choice.html
     id="effectsize1a_new"
     title="Study Design"
     question_text="Is this an example of a between-groups analysis or a within-groups analysis?"
     options="bg::Between-groups||wg::Within-groups"
-    correct_answer="wg"
-    solution_text="The same individuals are measured on two different occasions (before and after the program), making this a **within-groups** analysis."
+    correct_answer="bg"
+    solution_text="There are two distinct groups (New Therapy and Placebo), with each participant belonging to only one group. This is a **between-groups** analysis."
 %}
 
 {% include question_dropdown.html
     id="effectsize1b_new"
     title="P-value Interpretation"
     question_text="Interpret the p-value given in the table."
-    solution_text="The p-value of < 0.001 is very small (much less than 0.05). This indicates that the observed increase in memory recall scores is statistically significant, suggesting it is highly unlikely to have occurred by chance if the program had no effect."
+    solution_text="The p-value of < 0.001 is very small (much less than 0.05). This indicates that the observed difference in pain scores between the new therapy and placebo groups is statistically significant, suggesting it is highly unlikely to have occurred by chance."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="effectsize1c_new"
     title="Cohen's d Interpretation"
-    question_text="Interpret Cohen's d (0.46) for this study using the guidelines provided. What does it tell us about the program's effect?"
-    solution_text="Cohen's d is a standardized measure of the mean difference. According to the guidelines, a Cohen's d of 0.2 is small, 0.5 is medium, and 0.8 is large. Our value of 0.46 falls between small and medium, indicating a **medium effect size**. This means the memory training program has a noticeable, moderate practical impact on improving memory recall."
+    question_text="Based on the guidelines, what type of effect size does Cohen's d (0.98) represent?"
+    options="small::Small effect||medium::Medium effect||large::Large effect"
+    correct_answer="large"
+    solution_text="Cohen's d is a standardized measure of the difference between two means. According to the guidelines (Small = 0.2, Medium = 0.5, Large = 0.8), our value of 0.98 is greater than the threshold for a large effect (0.8). Therefore, it indicates a **large effect size**. This means the new pain management therapy has a very substantial and practically important impact on reducing pain compared to the placebo."
 %}
 
 {% include question_dropdown.html
     id="effectsize1d_new"
     title="Overall Conclusion"
-    question_text="Combining the p-value and Cohen's d, what can you conclude about the effectiveness of the memory training program?"
-    solution_text="The p-value (< 0.001) confirms statistical significance, meaning the program likely has an effect. Cohen's d (0.46) indicates a medium effect size, suggesting this effect is also practically meaningful. Therefore, there is strong evidence that the memory training program is effective, and its impact on memory recall is of moderate importance."
+    question_text="Combining the p-value and Cohen's d, what can you conclude about the effectiveness of the new pain management therapy?"
+    solution_text="The p-value (< 0.001) confirms statistical significance, meaning the new therapy is effective. Cohen's d (0.98) indicates a large effect size, suggesting this effect is also highly practically meaningful. Therefore, there is strong evidence that the new pain management therapy is significantly effective and has a substantial positive impact on reducing chronic back pain."
 %}
 
 ---
 
-### Stress Reduction Therapy
+### Sleep Quality Improvement Program
 
-A clinical trial is conducted to compare the effectiveness of three different stress reduction therapies (Therapy X, Therapy Y, and a control group receiving standard care). Participants are randomly assigned to one of the three groups, and their stress levels are measured after 8 weeks. Lower scores indicate lower stress.
+Researchers are testing a new sleep quality improvement program. A group of participants completes the 8-week program, and their sleep quality scores (higher scores = better sleep) are measured at three time points: Before the program, Mid-program (4 weeks), and After the program (8 weeks).
 
-An **Analysis of Variance (ANOVA)** is performed, and **Partial Eta-squared (η²p)** is calculated as a measure of effect size.
+A **repeated-measures ANOVA** is performed to examine the change in sleep quality over time. **Partial Eta-squared (η²p)** is calculated for the 'Time' factor.
 
-$$F(2, 147) = 3.89, p = 0.022, \eta^2_p = 0.05$$
+$$F(2, 58) = 4.10, p = 0.022, \eta^2_p = 0.04$$
 
 {% include question_multiple_choice.html
     id="effectsize2a_new"
     title="Study Design"
     question_text="Is this an example of a between-groups analysis or a within-groups analysis?"
     options="bg::Between-groups||wg::Within-groups"
-    correct_answer="bg"
-    solution_text="Participants are divided into three distinct groups, with each participant only belonging to one group. This is a **between-groups** analysis."
+    correct_answer="wg"
+    solution_text="The same individuals are measured at multiple time points (Before, Mid, After). This is a **within-groups** (or repeated-measures) analysis."
 %}
 
 {% include question_dropdown.html
     id="effectsize2b_new"
     title="P-value Interpretation"
-    question_text="Interpret the p-value given for the ANOVA."
-    solution_text="The p-value of 0.022 is less than the standard significance level of 0.05. This indicates that there is a statistically significant difference in stress levels among the three therapy groups, suggesting at least one therapy differs from the others."
+    question_text="Interpret the p-value given for the repeated-measures ANOVA."
+    solution_text="The p-value of 0.022 is less than the standard significance level of 0.05. This indicates that there is a statistically significant change in sleep quality scores over the three time points, suggesting the program had an effect."
 %}
 
-{% include question_dropdown.html
+{% include question_multiple_choice.html
     id="effectsize2c_new"
     title="Partial Eta-squared Interpretation"
-    question_text="Interpret the Partial Eta-squared (η²p) value (0.05) using the guidelines provided. What does it tell us about the therapy effect?"
-    solution_text="Partial Eta-squared (η²p) represents the proportion of variance in stress levels explained by the type of therapy. According to the guidelines, η²p = 0.01 is a small effect, 0.06 is a medium effect, and 0.14 is a large effect. Our η²p = 0.05 indicates a **small effect size**. This means that the therapy type accounts for about 5% of the variability in stress levels."
+    question_text="Based on the guidelines, what type of effect size does Partial Eta-squared (η²p = 0.04) represent?"
+    options="small::Small effect||medium::Medium effect||large::Large effect"
+    correct_answer="small"
+    solution_text="Partial Eta-squared (η²p) represents the proportion of variance in sleep quality scores explained by the 'Time' factor. According to the guidelines (Small = 0.01, Medium = 0.06, Large = 0.14), our η²p = 0.04 falls into the **small effect size** category, as it is greater than 0.01 but less than 0.06. This means that the progression through the program (time) accounts for about 4% of the variability in sleep quality scores."
 %}
 
 {% include question_dropdown.html
     id="effectsize2d_new"
     title="Combined Conclusion"
-    question_text="Considering both the p-value and Partial Eta-squared, what is your overall conclusion regarding the effectiveness of the therapies?"
-    solution_text="The p-value (0.022) suggests a statistically significant difference between the groups. However, the Partial Eta-squared (0.05) indicates that the therapy type explains only a small proportion of the variance in stress levels. While there's a detectable difference, the practical impact of therapy type on individual stress levels might be considered modest."
-%}
-
----
-
-### Customer Loyalty Survey
-
-A large retail company wants to investigate if there is an association between a customer's preferred communication method (email, phone, in-store) and their reported loyalty status (loyal, regular, new). They conduct a survey with 5000 customers.
-
-| | Loyal | Regular | New | TOTAL |
-| :---- | :---- | :---- | :---- | :---- |
-| Email | 1500 | 800 | 200 | 2500 |
-| Phone | 500 | 300 | 100 | 900 |
-| In-store | 900 | 600 | 100 | 1600 |
-| TOTAL | 2900 | 1700 | 400 | 5000 |
-
-A **chi-square test of independence** is performed to examine the association, and **Cramer's V** is calculated as an effect size. The contingency table has 3 rows (Email, Phone, In-store) and 3 columns (Loyal, Regular, New). The degrees of freedom for Cramer's V are min(3-1, 3-1) = min(2,2) = 2.
-
-$$ \chi^2(4, N=5000) = 28.5, p < 0.001, \text{Cramer's V} = 0.075 $$
-
-{% include question_numerical.html
-    id="effectsize3a_new"
-    title="Loyalty via Email"
-    question_text="What percentage (correct to 1 decimal place) of customers who prefer email are 'Loyal'?"
-    correct_answer="60.0"
-    tolerance="0.05"
-    solution_text="$\frac{1500}{2500} \times 100 = 60.0\%$"
-%}
-
-{% include question_numerical.html
-    id="effectsize3b_new"
-    title="Loyalty via Phone"
-    question_text="What percentage (correct to 1 decimal place) of customers who prefer phone are 'Loyal'?"
-    correct_answer="55.6"
-    tolerance="0.05"
-    solution_text="$\frac{500}{900} \times 100 = 55.55... = 55.6\%$ (1 d.p.)"
-%}
-
-{% include question_dropdown.html
-    id="effectsize3c_new"
-    title="P-value Interpretation"
-    question_text="Interpret the p-value from the chi-square test."
-    solution_text="The p-value of < 0.001 is extremely small, well below the 0.05 threshold. This indicates a statistically significant association between preferred communication method and loyalty status, meaning the relationship is unlikely due to random chance."
-%}
-
-{% include question_dropdown.html
-    id="effectsize3d_new"
-    title="Cramer's V Interpretation"
-    question_text="Interpret Cramer's V (0.075) for this study, considering the degrees of freedom (df=2) and the guidelines provided. What does it tell us about the association?"
-    solution_text="Cramer's V is a measure of association for nominal variables. For df=2, the guidelines are: 0.07 (small effect), 0.21 (medium effect), 0.35 (large effect). Our Cramer's V = 0.075 falls into the **small effect size** category (just above the threshold for small). This means that while there's a statistically significant association, the strength of the relationship between communication preference and loyalty status is quite weak in practical terms."
-%}
-
-{% include question_dropdown.html
-    id="effectsize3e_new"
-    title="Overall Conclusion & Large Sample Size"
-    question_text="Given the very small p-value but also a very small Cramer's V, what is your overall conclusion? What does this illustrate about large sample sizes?"
-    solution_text="This scenario highlights the importance of effect sizes. The p-value (< 0.001) indicates a statistically significant association. However, the Cramer's V (0.075) reveals that this association is very weak. With such a large sample size (N=5000), even a negligible relationship can become statistically significant. Our conclusion is that while an association technically exists, its practical importance is minimal. This demonstrates that a small p-value does not automatically imply a practically important effect, especially with large samples."
+    question_text="Considering both the p-value and Partial Eta-squared, what is your overall conclusion regarding the effectiveness of the sleep quality improvement program?"
+    solution_text="The p-value (0.022) indicates that the program led to a statistically significant change in sleep quality over time. However, the Partial Eta-squared (0.04) reveals that this effect is a small effect. While the program *does* have a detectable impact, the amount of variation in sleep quality scores explained by the program is modest. This suggests a statistically significant but practically small effect."
 %}
