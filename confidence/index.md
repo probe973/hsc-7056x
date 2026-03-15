@@ -21,7 +21,7 @@ Researchers often want to estimate a measure, such as the mean, of a population.
 This worksheet was uploaded to notebooklm to get a audio guide to the work.  It has been checked by the author to ensure accuracy.
 
 <audio controls>
-  <source src="/hsc-7056x/assets/audio/odds.mp3" type="audio/mpeg">
+  <source src="/hsc-7056x/assets/audio/confidence.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
