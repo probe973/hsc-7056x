@@ -11,6 +11,21 @@ This workshop focuses on understanding how to quantify the likelihood of an even
 
 ---
 
+<div class="output" markdown="1">
+### Audio guide to the worksheet
+
+This worksheet was uploaded to notebooklm to get a audio guide to the work.  It has been checked by the author to ensure accuracy.
+
+<audio controls>
+  <source src="/assets/audio/odds.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</div>
+
+---
+
+
 <div class="explanation" markdown="1">
 ## Risk and Relative Risk (RR)
 
