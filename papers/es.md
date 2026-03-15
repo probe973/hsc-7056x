@@ -103,11 +103,11 @@ An **independent-samples t-test** is performed to compare the mean pain levels b
 
 ### Sleep Quality Improvement Program
 
-Researchers are testing a new sleep quality improvement program. A group of participants completes the 8-week program, and their sleep quality scores (higher scores = better sleep) are measured at three time points: Before the program, Mid-program (4 weeks), and After the program (8 weeks).
+Researchers are testing a new sleep quality improvement program. A group of 100 participants completes the 8-week program, and their sleep quality scores (higher scores = better sleep) are measured at three time points: Before the program, Mid-program (4 weeks), and After the program (8 weeks).
 
 A **repeated-measures ANOVA** is performed to examine the change in sleep quality over time. **Partial Eta-squared (η²p)** is calculated for the 'Time' factor.
 
-$$F(2, 58) = 4.10, p = 0.022, \eta^2_p = 0.04$$
+$$F(2, 198) = 4.13, p = 0.017, \eta^2_p = 0.04$$
 
 {% include question_multiple_choice.html
     id="effectsize2a_new"
@@ -122,7 +122,7 @@ $$F(2, 58) = 4.10, p = 0.022, \eta^2_p = 0.04$$
     id="effectsize2b_new"
     title="P-value Interpretation"
     question_text="Interpret the p-value given for the repeated-measures ANOVA."
-    solution_text="The p-value of 0.022 is less than the standard significance level of 0.05. This indicates that there is a statistically significant change in sleep quality scores over the three time points, suggesting the program had an effect."
+    solution_text="The p-value of 0.017 is less than the standard significance level of 0.05. This indicates that there is a statistically significant change in sleep quality scores over the three time points, suggesting the program had an effect."
 %}
 
 {% include question_multiple_choice.html
@@ -138,5 +138,5 @@ $$F(2, 58) = 4.10, p = 0.022, \eta^2_p = 0.04$$
     id="effectsize2d_new"
     title="Combined Conclusion"
     question_text="Considering both the p-value and Partial Eta-squared, what is your overall conclusion regarding the effectiveness of the sleep quality improvement program?"
-    solution_text="The p-value (0.022) indicates that the program led to a statistically significant change in sleep quality over time. However, the Partial Eta-squared (0.04) reveals that this effect is a small effect. While the program *does* have a detectable impact, the amount of variation in sleep quality scores explained by the program is modest. This suggests a statistically significant but practically small effect."
+    solution_text="The p-value (0.017) indicates that the program led to a statistically significant change in sleep quality over time. However, the Partial Eta-squared (0.04) reveals that this effect is a small effect. While the program *does* have a detectable impact, the amount of variation in sleep quality scores explained by the program is modest. This suggests a statistically significant but practically small effect."
 %}
