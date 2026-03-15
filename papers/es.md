@@ -9,6 +9,25 @@ title: Understanding Effect Sizes
 
 This workshop focuses on the crucial concept of **effect sizes**, exploring what they represent, how they complement or differ from p-values, and why they are particularly important when dealing with studies that involve very large sample sizes.
 
+---
+
+<div class="output" markdown="1">
+### Audio guide to the worksheet
+
+This worksheet was uploaded to notebooklm to get a audio guide to the work.  It has been checked by the author to ensure accuracy.
+
+<audio controls>
+  <source src="/hsc-7056x/assets/audio/es.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+A transcript of the audio can be found <a href="audio_es.html" target="_blank">here</a>
+
+</div>
+
+---
+
 ## What is an Effect Size?
 
 An **effect size** is a quantitative measure of the magnitude of a phenomenon. In simpler terms, it tells you *how much* of an effect there is. While a p-value helps determine if an effect exists (statistical significance), an effect size tells you about the *strength* or *practical importance* of that effect. It's a standardized way to quantify the difference between groups or the strength of a relationship between variables, making it understandable and comparable across different studies.
