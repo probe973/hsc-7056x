@@ -18,7 +18,7 @@ Researchers often want to estimate a measure, such as the mean, of a population.
 <div class="output" markdown="1">
 ### Audio guide to the worksheet
 
-This worksheet was uploaded to notebooklm to get a audio guide to the work.  It has been checked by the author to ensure accuracy.
+This worksheet was uploaded to notebooklm to get an audio guide to the work.  It has been checked by the author to ensure accuracy.
 
 <audio controls>
   <source src="/hsc-7056x/assets/audio/confidence.mp3" type="audio/mpeg">
