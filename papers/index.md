@@ -39,5 +39,14 @@ Here you will find examples of reading statistical results in papers.
             </div>
         </div>
     </a>
+    <a href="{{ "es.html" }}" class="card">
+        <div class="card-content">
+            <!-- ICON REMOVED -->
+            <div class="card-text">
+                <h3>Effect Size</h3>
+                <p>Looking at effect size and how p-values on their own don't always give a complete picture</p>
+            </div>
+        </div>
+    </a>
     
 </div>
