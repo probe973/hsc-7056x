@@ -13,6 +13,26 @@ Researchers often want to estimate a measure, such as the mean, of a population.
 
 </div>
 
+---
+
+<div class="output" markdown="1">
+### Audio guide to the worksheet
+
+This worksheet was uploaded to notebooklm to get a audio guide to the work.  It has been checked by the author to ensure accuracy.
+
+<audio controls>
+  <source src="/hsc-7056x/assets/audio/odds.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+A transcript of the audio can be found <a href="audio.html">here</a>
+
+</div>
+
+---
+
+
 <div class="instructions" markdown="1">
 
 ### Point and Interval Estimates
