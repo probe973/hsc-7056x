@@ -15,7 +15,7 @@ T-tests are used to compare a sample mean with a population mean, or to compare 
 
 <div class="output" markdown="1">
 
-  ### Audio guide to the worksheet
+### Audio guide to the worksheet
 
 This worksheet was uploaded to notebooklm to get an audio guide to the work.  It has been checked by the author to ensure accuracy.
 
