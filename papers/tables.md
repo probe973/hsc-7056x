@@ -12,6 +12,23 @@ This workshop focuses on reading statistics presented in tables.
 
 ---
 
+<div class="output" markdown="1">
+### Audio guide to the worksheet
+
+This worksheet was uploaded to notebooklm to get an audio guide to the work.  It has been checked by the author to ensure accuracy.
+
+<audio controls>
+  <source src="/hsc-7056x/assets/audio/papers.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+A transcript of the audio can be found <a href="audio_papers.html" target="_blank">here</a>
+
+</div>
+
+---
+
 ### Footloose
 
 A new treatment for loose feet has been designed.  The foot loose index (FLI) is a measure of the performance of the foot, with higher values demonstrating better performance.  A group of individuals are recruited to test the new treatment.  The FLI is recorded before treatment and then again after 3 months of treatment.
