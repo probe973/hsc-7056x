@@ -64,8 +64,8 @@ An **independent-samples t-test** is performed to compare the mean pain levels b
 
 | Group | N | Mean Pain Score | SD | t | p | Cohen's d |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| New Therapy | 40 | 3.2 | 1.1 | -4.85 | < 0.001 | 0.98 |
-| Placebo | 40 | 5.5 | 1.2 | | | |
+| New Therapy | 40 | 3.2 | 2.5 | -4.85 | < 0.001 | 0.92 |
+| Placebo | 40 | 5.5 | 2.5 | | | |
 
 {% include question_multiple_choice.html
     id="effectsize1a_new"
@@ -86,17 +86,17 @@ An **independent-samples t-test** is performed to compare the mean pain levels b
 {% include question_multiple_choice.html
     id="effectsize1c_new"
     title="Cohen's d Interpretation"
-    question_text="Based on the guidelines, what type of effect size does Cohen's d (0.98) represent?"
+    question_text="Based on the guidelines, what type of effect size does Cohen's d (0.92) represent?"
     options="small::Small effect||medium::Medium effect||large::Large effect"
     correct_answer="large"
-    solution_text="Cohen's d is a standardized measure of the difference between two means. According to the guidelines (Small = 0.2, Medium = 0.5, Large = 0.8), our value of 0.98 is greater than the threshold for a large effect (0.8). Therefore, it indicates a **large effect size**. This means the new pain management therapy has a very substantial and practically important impact on reducing pain compared to the placebo."
+    solution_text="Cohen's d is a standardized measure of the difference between two means. According to the guidelines (Small = 0.2, Medium = 0.5, Large = 0.8), our value of 0.92 is greater than the threshold for a large effect (0.8). Therefore, it indicates a **large effect size**. This means the new pain management therapy has a very substantial and practically important impact on reducing pain compared to the placebo."
 %}
 
 {% include question_dropdown.html
     id="effectsize1d_new"
     title="Overall Conclusion"
     question_text="Combining the p-value and Cohen's d, what can you conclude about the effectiveness of the new pain management therapy?"
-    solution_text="The p-value (< 0.001) confirms statistical significance, meaning the new therapy is effective. Cohen's d (0.98) indicates a large effect size, suggesting this effect is also highly practically meaningful. Therefore, there is strong evidence that the new pain management therapy is significantly effective and has a substantial positive impact on reducing chronic back pain."
+    solution_text="The p-value (< 0.001) confirms statistical significance, meaning the new therapy is effective. Cohen's d (0.92) indicates a large effect size, suggesting this effect is also highly practically meaningful. Therefore, there is strong evidence that the new pain management therapy is significantly effective and has a substantial positive impact on reducing chronic back pain."
 %}
 
 ---
