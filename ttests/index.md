@@ -11,7 +11,25 @@ T-tests are used to compare a sample mean with a population mean, or to compare 
 
 </div>
 
+---
+
+<div class="output" markdown="1">
+
+  ### Audio guide to the worksheet
+
+This worksheet was uploaded to notebooklm to get an audio guide to the work.  It has been checked by the author to ensure accuracy.
+
+<audio controls>
+  <source src="/hsc-7056x/assets/audio/ttests.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</div>
+
+---
+
 <div class="explanation" markdown="1">
+
   
 ## One-sample t-test
 
