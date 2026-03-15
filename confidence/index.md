@@ -26,7 +26,7 @@ Your browser does not support the audio element.
 </audio>
 
 
-A transcript of the audio can be found <a href="audio.html">here</a>
+A transcript of the audio can be found <a href="audio.html" target="_blank">here</a>
 
 </div>
 
