@@ -224,6 +224,6 @@ The following table includes all factors from a study on **delayed discharge**.
     title="3c"
     question_text="Approximately how many times **higher** are the odds of being delayed in discharge if the patient lives alone?"
     correct_answer="1.98"
-    tolerance="0.02"
+    tolerance="0.03"
     solution_text="The OR for 'Lives Alone' is 1.98, which is nearly double the odds."
 %}
