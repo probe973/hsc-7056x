@@ -256,7 +256,7 @@ Considering the results for the **Barthel Index**
 {% include question_numerical.html
     id="s_q9"
     title="9"
-    question_text="What was the **difference in adjusted means** between the intervention and control groups at 6 months?"
+    question_text="What was the **difference in adjusted means** between the intervention and control groups on the Barthel index at 6 months?"
     correct_answer="0.004"
     tolerance="0"
     solution_text="The 'Difference in adjusted means' column for 6 months shows 0.004."
@@ -265,7 +265,7 @@ Considering the results for the **Barthel Index**
 {% include question_multiple_choice.html
     id="s_q10"
     title="10"
-    question_text="What was the **95% confidence interval** for the difference in adjusted means at 6 months?"
+    question_text="What was the **95% confidence interval** for the difference in adjusted means on the Barthel index at 6 months?"
     options="ci_6::−0.52 to 0.53||ci_12::−0.40 to 0.72||ci_se::0.20 to 0.22"
     correct_answer="ci_6"
     solution_text="The value in brackets next to 0.004 is (−0.52 to 0.53)."
@@ -274,7 +274,7 @@ Considering the results for the **Barthel Index**
 {% include question_multiple_choice.html
     id="s_q11"
     title="11"
-    question_text="Was the value of ‘0’ (representing no difference) within the 95% confidence interval for the difference in adjusted means?"
+    question_text="Was the value of ‘0’ (representing no difference) within the 95% confidence interval for the difference in adjusted means, Barthel index, 6 months?"
     options="no_out::No; the interval is entirely above zero.||yes_in::Yes; the interval ranges from -0.52 to 0.53.||yes_only::Yes; but only for the intervention group."
     correct_answer="yes_in"
     solution_text="Because the range goes from a negative number to a positive number, it must pass through zero."
