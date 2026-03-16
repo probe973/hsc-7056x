@@ -234,9 +234,9 @@ If the sample size is large, then this formula is a close approximation when usi
     id="ciq6di"
     title="6d part i"
     question_text="Calculate the lower value of the 95% confidence interval if sample mean = 100, population standard deviation = 75, sample size = 225"
-    correct_answer="90.8"
+    correct_answer="90.2"
     tolerance="0"
-    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.2=90.8$"
+    solution_text="The margin of error is $1.96 \times \frac{75}{\sqrt{225}}=9.2$ so  $100-9.8=90.2$"
 %}
 
 {% include question_numerical.html
