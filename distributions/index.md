@@ -48,9 +48,9 @@ Consider the following dataset:
    title="1"
    question_text="Calculate the mean, the median, and the range, rounding to 2 decimal places if necessary:"
    table_content=stats1
-   answers="39.58 || 40 || 13"
+   answers="39.5 || 40 || 13"
    tolerance="0.005" 
-   solution_text="The mean is calculated as the sum of all values divided by the number of values ($\frac{\sum x}{N}$).  $\frac{475}{12} = 39.58$. <br>
+   solution_text="The mean is calculated as the sum of all values divided by the number of values ($\frac{\sum x}{N}$).  $\frac{474}{12} = 39.5$. <br>
    Since there is an even number of values (12), the median is the average of the two middle values (the 6th and 7th values): $\frac{40 + 40}{2} = 40$.<br>
    The range is the largest value minus the smallest value: $47 - 34 = 13$."
 %}
@@ -76,9 +76,9 @@ The new dataset is: $34, 35, 35, 36, 40, 40, 40, 40, 41, 50, 65, 100$.
     id="q2_mean"
     title="2b: Recalculate the Mean"
     question_text="Recalculate the **mean** of the new dataset. (Round to two decimal places if necessary)"
-    correct_answer="48.83"
+    correct_answer="46.33"
     tolerance="0.01"
-    solution_text="The new sum is $586$. The new mean is $\frac{586}{12} = 48.83$."
+    solution_text="The new sum is $556$. The new mean is $\frac{586}{12} = 48.33$."
 %}
 
 {% include question_dropdown.html
