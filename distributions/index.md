@@ -65,7 +65,7 @@ The new dataset is: $34, 35, 35, 36, 40, 40, 40, 40, 41, 50, 65, 100$.
 
 {% include question_numerical.html
     id="q2_median"
-    title="Question 2a: Recalculate the Median"
+    title="2a: Recalculate the Median"
     question_text="Recalculate the **median** of the new dataset."
     correct_answer="40"
     tolerance="0"
@@ -74,7 +74,7 @@ The new dataset is: $34, 35, 35, 36, 40, 40, 40, 40, 41, 50, 65, 100$.
 
 {% include question_numerical.html
     id="q2_mean"
-    title="Question 2b: Recalculate the Mean"
+    title="2b: Recalculate the Mean"
     question_text="Recalculate the **mean** of the new dataset. (Round to two decimal places if necessary)"
     correct_answer="48.83"
     tolerance="0.01"
@@ -83,14 +83,14 @@ The new dataset is: $34, 35, 35, 36, 40, 40, 40, 40, 41, 50, 65, 100$.
 
 {% include question_dropdown.html
     id="q2_contrast"
-    title="Question 2c: Mean vs. Median"
+    title="2c: Mean vs. Median"
     question_text="What do you notice about the values for the median and mean between Question 1 and Question 2?"
     solution_text="The **median** remained the same (40), but the **mean** increased significantly (from 39.58 to 48.83). This demonstrates that the mean is sensitive to extreme values (outliers), while the median is more resistant to them."
 %}
 
 {% include question_multiple_choice.html
     id="q2_skew"
-    title="Question 2d: Type of Skew"
+    title="2d: Type of Skew"
     question_text="What type of skew is shown in the data for Question 2?"
     options="neg::Negative (Skewed Left)||pos::Positive (Skewed Right)||sym::Symmetrical"
     correct_answer="pos"
@@ -155,7 +155,7 @@ Consider the following three sets of data:
 
 {% include question_dropdown.html
     id="q3_contrast"
-    title="Question 3b: Compare and Contrast"
+    title="3b: Compare and Contrast"
     question_text="Compare and contrast the three datasets based on their summary statistics."
     solution_text="
 *   **Central Tendency (Mean/Median):** Set A and Set B have similar median/mean values (around 16), while Set C has a much higher central tendency (around 26-27).
@@ -180,7 +180,7 @@ Summary statistics are provided for three sets of data:
 
 {% include question_multiple_choice.html
     id="q4_dispersion"
-    title="Question 4a: Dispersion"
+    title="4a: Dispersion"
     question_text="Which dataset had the least dispersion (least spread of data)?"
     options="set_a::Set A||set_b::Set B||set_c::Set C"
     correct_answer="set_c"
@@ -189,7 +189,7 @@ Summary statistics are provided for three sets of data:
 
 {% include question_multiple_choice.html
     id="q4_skew_dir"
-    title="Question 4b: Skew"
+    title="4b: Skew"
     question_text="Which dataset had the most skew, and in what direction was the skew?"
     options="a_pos::Set A (Positive)||b_pos::Set B (Positive)||a_neg::Set A (Negative)"
     correct_answer="a_pos"
@@ -198,7 +198,7 @@ Summary statistics are provided for three sets of data:
 
 {% include question_dropdown.html
     id="q4_contrast"
-    title="Question 4c: Compare and Contrast"
+    title="4c: Compare and Contrast"
     question_text="Compare and contrast the three datasets."
     solution_text="
 *   Set A has a much higher mean value than the other two datasets, which have similar means.  The medians of all of the datasets are very similar. 
