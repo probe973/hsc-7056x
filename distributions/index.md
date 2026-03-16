@@ -78,7 +78,7 @@ The new dataset is: $34, 35, 35, 36, 40, 40, 40, 40, 41, 50, 65, 100$.
     question_text="Recalculate the **mean** of the new dataset. (Round to two decimal places if necessary)"
     correct_answer="46.33"
     tolerance="0.01"
-    solution_text="The new sum is $556$. The new mean is $\frac{586}{12} = 48.33$."
+    solution_text="The new sum is $556$. The new mean is $\frac{556}{12} = 48.33$."
 %}
 
 {% include question_dropdown.html
