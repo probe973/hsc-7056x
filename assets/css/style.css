@@ -91,7 +91,7 @@ nav ul li a:hover,
 nav ul li a:focus {
 background-color: #005A9C; /* NEW AAA-COMPLIANT DARK BLUE */
 color: #ffffff;
-outline: none;
+/* outline: none; <-- REMOVED */
 }
 nav ul li a.active {
 background-color: #005A9C; /* NEW AAA-COMPLIANT DARK BLUE */
